@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us | Abato Transglobal</title>
+
+  <meta name="description" content="Learn about Abato Transglobal and our approach to professional translation, localization, interpretation, transcription, subtitling and linguistic quality services.">
+
+  <link rel="canonical" href="https://abatotransglobal.com/about/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+
+    :root {
+      --teal: #19c3b1;
+      --teal-dark: #0f9e91;
+      --blue: #123b68;
+      --blue-dark: #071d35;
+      --navy: #061525;
+      --white: #ffffff;
+      --light: #f5fbfc;
+      --text: #183247;
+      --muted: #657889;
+      --border: rgba(18,59,104,.12);
+      --gradient: linear-gradient(135deg,#19c3b1,#123b68);
+      --shadow: 0 20px 60px rgba(7,29,53,.12);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 10% 10%,rgba(25,195,177,.07),transparent 28%),
+        radial-gradient(circle at 90% 20%,rgba(18,59,104,.06),transparent 30%),
+        #fff;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1,h2,h3,h4 {
+      font-family: "Manrope",sans-serif;
+      color: var(--blue-dark);
+      line-height: 1.2;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px,92%);
+      margin: auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(18,59,104,.08);
+    }
+
+    .navbar {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Manrope",sans-serif;
+      font-weight: 800;
+      font-size: 20px;
+      color: var(--blue);
+      white-space: nowrap;
+    }
+
+    .premium-logo,
+    .premium-logo svg {
+      width: 42px;
+      height: 42px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    nav a {
+      font-size: 14px;
+      font-weight: 600;
+      color: #41586c;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: var(--teal-dark);
+    }
+
+    .nav-cta {
+      padding: 12px 20px;
+      border-radius: 50px;
+      background: var(--gradient);
+      color: white !important;
+      box-shadow: 0 10px 25px rgba(18,59,104,.18);
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: transparent;
+      color: var(--blue);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .page-hero {
+      position: relative;
+      padding: 110px 0;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg,rgba(245,251,252,.98),rgba(238,247,249,.96));
+    }
+
+    .page-hero::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: rgba(25,195,177,.08);
+      right: -200px;
+      top: -250px;
+    }
+
+    .page-hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 50px;
+      background: rgba(25,195,177,.09);
+      color: var(--teal-dark);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+
+    .page-hero h1 {
+      font-size: clamp(42px,6vw,65px);
+      letter-spacing: -2.5px;
+      margin-bottom: 22px;
+    }
+
+    .page-hero h1 span {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .page-hero p {
+      max-width: 750px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    /* GENERAL */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 50px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(32px,4vw,48px);
+      letter-spacing: -1.5px;
+      margin-bottom: 18px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+    }
+
+    /* STORY */
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .story-content h2 {
+      font-size: 43px;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+    }
+
+    .story-content p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .story-visual {
+      position: relative;
+      min-height: 480px;
+      border-radius: 30px;
+      overflow: hidden;
+      background:
+        linear-gradient(145deg,#19c3b1,#123b68);
+      box-shadow: var(--shadow);
+    }
+
+    .story-visual::before,
+    .story-visual::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 50%;
+    }
+
+    .story-visual::before {
+      width: 450px;
+      height: 450px;
+      top: -180px;
+      right: -180px;
+    }
+
+    .story-visual::after {
+      width: 300px;
+      height: 300px;
+      bottom: -160px;
+      left: -120px;
+    }
+
+    .language-symbols {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 50px;
+      color: rgba(255,255,255,.18);
+      font-family: "Manrope",sans-serif;
+      font-size: 34px;
+      font-weight: 800;
+    }
+
+    .visual-label {
+      position: absolute;
+      left: 35px;
+      bottom: 35px;
+      z-index: 2;
+      color: white;
+    }
+
+    .visual-label h3 {
+      color: white;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .visual-label p {
+      color: rgba(255,255,255,.72);
+      font-size: 13px;
+      max-width: 360px;
+    }
+
+    /* VALUES */
+
+    .values {
+      background: #f7fbfc;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 22px;
+    }
+
+    .value-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 30px;
+      transition: .3s;
+    }
+
+    .value-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .value-icon {
+      width: 55px;
+      height: 55px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: rgba(25,195,177,.1);
+      color: var(--teal-dark);
+      font-size: 21px;
+      margin-bottom: 20px;
+    }
+
+    .value-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .value-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* CAPABILITIES */
+
+    .capability-grid {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .capability-intro h2 {
+      font-size: 43px;
+      letter-spacing: -1.5px;
+      margin-bottom: 18px;
+    }
+
+    .capability-intro p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .capabilities {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 15px;
+    }
+
+    .capability {
+      padding: 20px;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .capability i {
+      color: var(--teal-dark);
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .capability h3 {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .capability p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* APPROACH */
+
+    .approach {
+      background: var(--blue-dark);
+      color: white;
+    }
+
+    .approach .section-heading h2 {
+      color: white;
+    }
+
+    .approach .section-heading p {
+      color: rgba(255,255,255,.65);
+    }
+
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 18px;
+    }
+
+    .approach-card {
+      padding: 28px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+
+    .approach-card span {
+      display: block;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 17px;
+    }
+
+    .approach-card h3 {
+      color: white;
+      font-size: 17px;
+      margin-bottom: 9px;
+    }
+
+    .approach-card p {
+      color: rgba(255,255,255,.62);
+      font-size: 13px;
+    }
+
+    /* CTA */
+
+    .cta {
+      padding: 85px 0;
+    }
+
+    .cta-box {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      padding: 65px 30px;
+      border-radius: 30px;
+      background: var(--gradient);
+      color: white;
+      box-shadow: 0 25px 70px rgba(18,59,104,.2);
+    }
+
+    .cta-box h2 {
+      color: white;
+      font-size: clamp(32px,4vw,48px);
+      margin-bottom: 15px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,.8);
+      max-width: 650px;
+      margin: 0 auto 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 14px;
+      background: white;
+      color: var(--blue);
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #041322;
+      color: rgba(255,255,255,.65);
+      padding: 65px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr .7fr .7fr .9fr;
+      gap: 50px;
+      padding-bottom: 45px;
+      border-bottom: 1px solid rgba(255,255,255,.09);
+    }
+
+    .footer-logo {
+      color: white;
+      margin-bottom: 18px;
+    }
+
+    .footer-about p {
+      max-width: 400px;
+      font-size: 13px;
+    }
+
+    .footer-column h4 {
+      color: white;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-column a {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,.58);
+    }
+
+    .footer-column a:hover {
+      color: var(--teal);
+    }
+
+    .footer-bottom {
+      padding-top: 25px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: 11px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:1000px) {
+
+      nav {
+        gap: 15px;
+      }
+
+      .story-grid,
+      .capability-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .values-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .approach-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:760px) {
+
+      .navbar {
+        min-height: 72px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      nav {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+        background: white;
+        border-bottom: 1px solid var(--border);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        padding: 8px 0;
+      }
+
+      .nav-cta {
+        text-align: center;
+      }
+
+      section {
+        padding: 75px 0;
+      }
+
+      .page-hero {
+        padding: 75px 0;
+      }
+
+      .values-grid,
+      .approach-grid,
+      .capabilities,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .story-visual {
+        min-height: 400px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="container navbar">
+
+    <a href="/" class="logo">
+
+      <span class="premium-logo">
+
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#19C3B1"/>
+              <stop offset="100%" stop-color="#123B68"/>
+            </linearGradient>
+          </defs>
+
+          <circle cx="50" cy="50" r="46" fill="url(#logoGradient)"/>
+
+          <path
+            d="M27 70 L48 25 L57 25 L77 70 L65 70 L60 57 L41 57 L35 70 Z
+               M45 48 H56 L51 35 Z"
+            fill="white"/>
+
+          <circle cx="78" cy="20" r="7" fill="#19C3B1"/>
+
+        </svg>
+
+      </span>
+
+      ABATO TRANSGLOBAL
+
+    </a>
+
+
+    <button class="menu-toggle" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+
+    <nav id="mainNav">
+
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/services/">Services</a>
+      <a href="/industries/">Industries</a>
+      <a href="/languages/">Languages</a>
+      <a href="/contact/" class="nav-cta">Get a Free Quote</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section class="page-hero">
+
+  <div class="container">
+
+    <div class="page-hero-content">
+
+      <div class="eyebrow">
+        <span></span>
+        About Abato Transglobal
+      </div>
+
+      <h1>
+        Language Solutions for a
+        <span>Connected World.</span>
+      </h1>
+
+      <p>
+        Abato Transglobal provides professional multilingual language
+        services designed to help businesses, organizations and individuals
+        communicate clearly across languages, cultures and markets.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- OUR STORY -->
+
+<section>
+
+  <div class="container story-grid">
+
+    <div class="story-content">
+
+      <div class="eyebrow">
+        <span></span>
+        Who We Are
+      </div>
+
+      <h2>Built Around Clear Communication</h2>
+
+      <p>
+        Abato Transglobal is a professional language services brand focused
+        on helping clients communicate across linguistic and cultural
+        boundaries.
+      </p>
+
+      <p>
+        Our services cover translation, localization, interpretation,
+        transcription, subtitling, machine translation post-editing and
+        linguistic quality assurance.
+      </p>
+
+      <p>
+        We approach each project according to its purpose, audience,
+        terminology, language combination, format and delivery requirements.
+        The goal is not simply to translate words, but to help the final
+        content communicate naturally and effectively.
+      </p>
+
+    </div>
+
+
+    <div class="story-visual">
+
+      <div class="language-symbols">
+
+        <span>A</span>
+        <span>文</span>
+        <span>ع</span>
+        <span>あ</span>
+        <span>Я</span>
+        <span>ñ</span>
+        <span>한</span>
+        <span>Б</span>
+
+      </div>
+
+
+      <div class="visual-label">
+
+        <h3>Across Languages.</h3>
+
+        <p>
+          Connecting ideas, information and audiences through professional
+          multilingual communication.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- VALUES -->
+
+<section class="values">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        <span></span>
+        Our Principles
+      </div>
+
+      <h2>What Guides Our Work</h2>
+
+      <p>
+        Our approach is built around practical principles that support
+        consistent, professional language delivery.
+      </p>
+
+    </div>
+
+
+    <div class="values-grid">
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          <i class="fas fa-bullseye"></i>
+        </div>
+
+        <h3>Accuracy</h3>
+
+        <p>
+          We focus on preserving the intended meaning, terminology and
+          context of the source content.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+
+        <h3>Localization</h3>
+
+        <p>
+          Content can be adapted to suit the language, culture and
+          expectations of the intended audience.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          <i class="fas fa-check-double"></i>
+        </div>
+
+        <h3>Quality</h3>
+
+        <p>
+          Linguistic review and quality checks support consistency,
+          clarity and professional presentation.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+
+        <h3>Reliability</h3>
+
+        <p>
+          Project planning and communication are aligned with agreed
+          requirements and timelines.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          <i class="fas fa-shield-halved"></i>
+        </div>
+
+        <h3>Confidentiality</h3>
+
+        <p>
+          Client information and project materials are handled with
+          professional care.
+        </p>
+
+      </div>
+
+
+      <div class="value-card">
+
+        <div class="value-icon">
+          <i class="fas fa-comments"></i>
+        </div>
+
+        <h3>Communication</h3>
+
+        <p>
+          Clear communication helps ensure that project expectations
+          remain aligned from start to finish.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CAPABILITIES -->
+
+<section>
+
+  <div class="container capability-grid">
+
+    <div class="capability-intro">
+
+      <div class="eyebrow">
+        <span></span>
+        Our Capabilities
+      </div>
+
+      <h2>From Everyday Content to Specialized Projects</h2>
+
+      <p>
+        Different projects require different language workflows. We support
+        a broad range of content types and can work according to client
+        terminology, reference materials, style guides and project
+        specifications.
+      </p>
+
+      <a href="/services/" style="
+        display:inline-flex;
+        align-items:center;
+        gap:8px;
+        padding:14px 21px;
+        border-radius:50px;
+        background:linear-gradient(135deg,#19c3b1,#123b68);
+        color:white;
+        font-weight:700;
+        font-size:13px;
+      ">
+        Explore Our Services
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+
+    <div class="capabilities">
+
+      <div class="capability">
+
+        <i class="fas fa-file-lines"></i>
+
+        <h3>Business Content</h3>
+
+        <p>
+          Corporate documents, presentations, communications and reports.
+        </p>
+
+      </div>
+
+
+      <div class="capability">
+
+        <i class="fas fa-cart-shopping"></i>
+
+        <h3>E-commerce</h3>
+
+        <p>
+          Product content, online stores and customer-facing materials.
+        </p>
+
+      </div>
+
+
+      <div class="capability">
+
+        <i class="fas fa-laptop-code"></i>
+
+        <h3>Technology</h3>
+
+        <p>
+          Software, websites, applications and digital products.
+        </p>
+
+      </div>
+
+
+      <div class="capability">
+
+        <i class="fas fa-heart-pulse"></i>
+
+        <h3>Healthcare</h3>
+
+        <p>
+          Medical, healthcare and patient-facing content.
+        </p>
+
+      </div>
+
+
+      <div class="capability">
+
+        <i class="fas fa-scale-balanced"></i>
+
+        <h3>Legal</h3>
+
+        <p>
+          Legal and government-related multilingual materials.
+        </p>
+
+      </div>
+
+
+      <div class="capability">
+
+        <i class="fas fa-film"></i>
+
+        <h3>Media</h3>
+
+        <p>
+          Subtitles, video content, transcription and entertainment.
+        </p>
+
+      </div>
+
+
+      <div class="capability">
+
+        <i class="fas fa-gamepad"></i>
+
+        <h3>Gaming</h3>
+
+        <p>
+          Game localization and multilingual gaming content.
+        </p>
+
+      </div>
+
+
+      <div class="capability">
+
+        <i class="fas fa-bullhorn"></i>
+
+        <h3>Marketing</h3>
+
+        <p>
+          Campaigns and content adapted for local audiences.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- OUR APPROACH -->
+
+<section class="approach">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        <span></span>
+        Our Approach
+      </div>
+
+      <h2>A Structured Approach to Every Project</h2>
+
+      <p>
+        We consider the complete communication objective rather than
+        treating language as a simple word-for-word process.
+      </p>
+
+    </div>
+
+
+    <div class="approach-grid">
+
+      <div class="approach-card">
+
+        <span>01 — UNDERSTAND</span>
+
+        <h3>Understand the Requirement</h3>
+
+        <p>
+          We review language pairs, content type, audience, terminology,
+          format and project requirements.
+        </p>
+
+      </div>
+
+
+      <div class="approach-card">
+
+        <span>02 — ADAPT</span>
+
+        <h3>Adapt the Content</h3>
+
+        <p>
+          Language is handled according to context, tone, cultural
+          expectations and intended purpose.
+        </p>
+
+      </div>
+
+
+      <div class="approach-card">
+
+        <span>03 — REVIEW</span>
+
+        <h3>Review the Output</h3>
+
+        <p>
+          Linguistic checks help identify inconsistencies, errors and
+          terminology issues.
+        </p>
+
+      </div>
+
+
+      <div class="approach-card">
+
+        <span>04 — DELIVER</span>
+
+        <h3>Deliver as Required</h3>
+
+        <p>
+          Final content is prepared according to the agreed format,
+          requirements and delivery timeline.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <h2>Have a Multilingual Project?</h2>
+
+      <p>
+        Tell us about your language requirements, project type and deadline.
+        We can review the details and discuss the next step.
+      </p>
+
+      <a href="/contact/" class="btn">
+        Contact Abato Transglobal
+        <i class="fas fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-about">
+
+        <a href="/" class="logo footer-logo">
+
+          <span class="premium-logo">
+
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+              <defs>
+                <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#19C3B1"/>
+                  <stop offset="100%" stop-color="#123B68"/>
+                </linearGradient>
+              </defs>
+
+              <circle cx="50" cy="50" r="46" fill="url(#footerGradient)"/>
+
+              <path
+                d="M27 70 L48 25 L57 25 L77 70 L65 70 L60 57 L41 57 L35 70 Z
+                   M45 48 H56 L51 35 Z"
+                fill="white"/>
+
+              <circle cx="78" cy="20" r="7" fill="#19C3B1"/>
+
+            </svg>
+
+          </span>
+
+          ABATO TRANSGLOBAL
+
+        </a>
+
+        <p>
+          Professional translation, localization and multilingual
+          language services for international communication.
+        </p>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Company</h4>
+
+        <a href="/">Home</a>
+        <a href="/about/">About Us</a>
+        <a href="/services/">Services</a>
+        <a href="/industries/">Industries</a>
+        <a href="/languages/">Languages</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Services</h4>
+
+        <a href="/services/">Translation</a>
+        <a href="/services/">Localization</a>
+        <a href="/services/">Interpretation</a>
+        <a href="/services/">Transcription</a>
+        <a href="/services/">Subtitling</a>
+
+      </div>
+
+
+      <div class="footer-column">
+
+        <h4>Contact</h4>
+
+        <a href="/contact/">Contact Us</a>
+
+        <a href="mailto:abatotransglobal@email.com">
+          Email Us
+        </a>
+
+        <a href="/contact/">
+          Request a Quote
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © <span id="year"></span> Abato Transglobal. All rights reserved.
+      </span>
+
+      <span>
+        Translation • Localization • Multilingual Communication
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script>
+
+  /* MOBILE MENU */
+
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  menuToggle.addEventListener("click", function() {
+
+    mainNav.classList.toggle("active");
+
+    const icon = menuToggle.querySelector("i");
+
+    if (mainNav.classList.contains("active")) {
+
+      icon.classList.remove("fa-bars");
+      icon.classList.add("fa-xmark");
+
+    } else {
+
+      icon.classList.remove("fa-xmark");
+      icon.classList.add("fa-bars");
+
+    }
+
+  });
+
+
+  /* CLOSE MENU AFTER CLICK */
+
+  document.querySelectorAll("#mainNav a").forEach(function(link) {
+
+    link.addEventListener("click", function() {
+
+      mainNav.classList.remove("active");
+
+      const icon = menuToggle.querySelector("i");
+
+      icon.classList.remove("fa-xmark");
+      icon.classList.add("fa-bars");
+
+    });
+
+  });
+
+
+  /* YEAR */
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
