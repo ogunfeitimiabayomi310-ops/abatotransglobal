@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Language Services | Abato Transglobal</title>
+
+  <meta name="description"
+        content="Explore Abato Transglobal's professional translation, localization, interpretation, transcription, subtitling, MTPE, linguistic QA, AI language services and project management solutions.">
+
+  <meta name="keywords"
+        content="translation services, localization services, interpretation, transcription, subtitling, MTPE, LQA, AI language services, project management, multilingual services">
+
+  <meta name="author" content="Abato Transglobal">
+
+  <link rel="canonical" href="https://abatotransglobal.com/services/">
+
+  <meta property="og:title" content="Language Services | Abato Transglobal">
+  <meta property="og:description"
+        content="Professional multilingual language services for businesses, organizations and global content.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abatotransglobal.com/services/">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+
+    :root {
+      --teal: #19c3b1;
+      --teal-dark: #0d9e91;
+      --blue: #123b68;
+      --blue-dark: #0a2747;
+      --text: #17324d;
+      --muted: #68798b;
+      --light: #f5f9fc;
+      --white: #ffffff;
+      --border: #e3ebf2;
+      --shadow: 0 15px 40px rgba(18,59,104,.09);
+      --radius: 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Manrope", sans-serif;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1140px, 92%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .light-section {
+      background: var(--light);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--teal-dark);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--teal);
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+      color: var(--blue);
+      font-size: clamp(32px, 4vw, 46px);
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(18,59,104,.08);
+    }
+
+    .nav {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      color: var(--blue);
+      font-size: 18px;
+      white-space: nowrap;
+    }
+
+    .logo svg {
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      color: #3e5368;
+      transition: .25s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--teal-dark);
+    }
+
+    .nav-cta {
+      padding: 12px 19px;
+      background: var(--blue);
+      color: #fff !important;
+      border-radius: 10px;
+    }
+
+    .nav-cta:hover {
+      background: var(--teal-dark);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      color: var(--blue);
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .page-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 85px 0;
+      background:
+        radial-gradient(circle at 90% 10%, rgba(25,195,177,.15), transparent 28%),
+        radial-gradient(circle at 5% 90%, rgba(18,59,104,.08), transparent 30%),
+        #fff;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .page-hero h1 {
+      color: var(--blue);
+      font-size: clamp(40px, 5vw, 62px);
+      letter-spacing: -1.8px;
+      margin-bottom: 20px;
+    }
+
+    .page-hero h1 span {
+      color: var(--teal-dark);
+    }
+
+    .hero-description {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 650px;
+      margin-bottom: 28px;
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image img {
+      height: 390px;
+      object-fit: cover;
+      border-radius: 25px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-badge {
+      position: absolute;
+      bottom: 22px;
+      left: -20px;
+      background: #fff;
+      padding: 16px 18px;
+      border-radius: 14px;
+      box-shadow: 0 15px 40px rgba(18,59,104,.16);
+      display: flex;
+      gap: 11px;
+      align-items: center;
+    }
+
+    .hero-badge-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 11px;
+      background: rgba(25,195,177,.12);
+      color: var(--teal-dark);
+      display: grid;
+      place-items: center;
+    }
+
+    .hero-badge strong {
+      display: block;
+      font-size: 13px;
+      color: var(--blue);
+    }
+
+    .hero-badge small {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    /* =========================
+       SERVICES INTRO
+    ========================== */
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .intro-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: #fff;
+    }
+
+    .intro-card i {
+      color: var(--teal-dark);
+      font-size: 25px;
+      margin-bottom: 18px;
+    }
+
+    .intro-card h3 {
+      color: var(--blue);
+      margin-bottom: 9px;
+      font-size: 21px;
+    }
+
+    .intro-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       SERVICE DETAILS
+    ========================== */
+
+    .service-list {
+      display: grid;
+      gap: 22px;
+    }
+
+    .service-detail {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 25px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 30px;
+      transition: .25s;
+    }
+
+    .service-detail:hover {
+      border-color: rgba(25,195,177,.5);
+      box-shadow: var(--shadow);
+      transform: translateY(-2px);
+    }
+
+    .service-number {
+      color: var(--teal-dark);
+      font-family: "Manrope", sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .service-icon {
+      width: 58px;
+      height: 58px;
+      margin-top: 10px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: rgba(25,195,177,.11);
+      color: var(--teal-dark);
+      font-size: 22px;
+    }
+
+    .service-detail h3 {
+      color: var(--blue);
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .service-detail p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 15px;
+      max-width: 750px;
+    }
+
+    .service-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .service-tags span {
+      padding: 6px 10px;
+      border-radius: 100px;
+      background: var(--light);
+      color: var(--blue);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    /* =========================
+       PROJECT MANAGEMENT
+    ========================== */
+
+    .pm-section {
+      background:
+        linear-gradient(135deg, #0d2f53, #123b68);
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .pm-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .pm-content .eyebrow {
+      color: var(--teal);
+    }
+
+    .pm-content h2 {
+      font-size: clamp(32px, 4vw, 45px);
+      margin-bottom: 16px;
+    }
+
+    .pm-content > p {
+      color: rgba(255,255,255,.72);
+      margin-bottom: 25px;
+    }
+
+    .pm-features {
+      display: grid;
+      gap: 13px;
+    }
+
+    .pm-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 11px;
+    }
+
+    .pm-feature i {
+      color: var(--teal);
+      margin-top: 5px;
+    }
+
+    .pm-feature span {
+      color: rgba(255,255,255,.78);
+      font-size: 14px;
+    }
+
+    .pm-image img {
+      height: 390px;
+      object-fit: cover;
+      border-radius: 22px;
+    }
+
+    /* =========================
+       AI SERVICES
+    ========================== */
+
+    .ai-section {
+      background: var(--light);
+    }
+
+    .ai-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .ai-visual {
+      background: linear-gradient(145deg, #123b68, #0a2747);
+      min-height: 390px;
+      border-radius: 25px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ai-circle {
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      border: 1px solid rgba(25,195,177,.4);
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .ai-circle::before,
+    .ai-circle::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 50%;
+    }
+
+    .ai-circle::before {
+      width: 270px;
+      height: 270px;
+    }
+
+    .ai-circle::after {
+      width: 330px;
+      height: 330px;
+    }
+
+    .ai-robot {
+      width: 95px;
+      height: 95px;
+      border-radius: 25px;
+      background: var(--teal);
+      color: var(--blue-dark);
+      display: grid;
+      place-items: center;
+      font-size: 40px;
+      box-shadow: 0 0 45px rgba(25,195,177,.25);
+    }
+
+    .ai-content h2 {
+      color: var(--blue);
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .ai-content > p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .ai-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+    }
+
+    .ai-list-item {
+      display: flex;
+      gap: 9px;
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .ai-list-item i {
+      color: var(--teal-dark);
+      margin-top: 5px;
+    }
+
+    /* =========================
+       PROCESS
+    ========================== */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .process-card {
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .process-number {
+      color: var(--teal-dark);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .process-card h3 {
+      color: var(--blue);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .process-card p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta {
+      padding: 80px 0;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, var(--blue), #1a557d);
+      padding: 55px;
+      border-radius: 25px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .cta-box h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,.72);
+      max-width: 600px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 21px;
+      border-radius: 11px;
+      font-weight: 700;
+      transition: .25s;
+    }
+
+    .btn-primary {
+      background: var(--teal);
+      color: var(--blue-dark);
+    }
+
+    .btn-primary:hover {
+      background: var(--teal-dark);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      background: #fff;
+      color: var(--blue);
+    }
+
+    .btn-light:hover {
+      transform: translateY(-2px);
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #081f38;
+      color: #fff;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr .8fr .8fr .9fr;
+      gap: 35px;
+      padding-bottom: 35px;
+    }
+
+    .footer-brand p {
+      color: rgba(255,255,255,.62);
+      font-size: 13px;
+      max-width: 350px;
+      margin-top: 15px;
+    }
+
+    .footer-title {
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 9px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,.6);
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--teal);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      color: rgba(255,255,255,.48);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* =========================
+       FLOATING QUOTE
+    ========================== */
+
+    .floating-quote {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 1500;
+      background: var(--teal);
+      color: var(--blue-dark);
+      padding: 13px 18px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 13px;
+      box-shadow: 0 10px 30px rgba(18,59,104,.22);
+    }
+
+    .floating-quote:hover {
+      background: var(--teal-dark);
+      color: #fff;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .hero-grid,
+      .pm-grid,
+      .ai-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        order: -1;
+      }
+
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+    @media (max-width: 700px) {
+
+      .nav {
+        height: 70px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 4%;
+        gap: 17px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .page-hero {
+        padding: 60px 0;
+      }
+
+      .hero-image {
+        order: 0;
+      }
+
+      .hero-image img {
+        height: 280px;
+      }
+
+      .hero-badge {
+        left: 12px;
+        bottom: 12px;
+      }
+
+      .section {
+        padding: 65px 0;
+      }
+
+      .service-detail {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .service-icon {
+        margin-top: 0;
+      }
+
+      .pm-image img {
+        height: 280px;
+      }
+
+      .ai-list {
+        grid-template-columns: 1fr;
+      }
+
+      .ai-visual {
+        min-height: 300px;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-box {
+        padding: 30px 23px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .floating-quote {
+        right: 15px;
+        bottom: 15px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header>
+
+  <div class="container nav">
+
+    <a href="/" class="logo">
+
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+          <linearGradient id="logoGradient"
+                          x1="0%"
+                          y1="0%"
+                          x2="100%"
+                          y2="100%">
+
+            <stop offset="0%" stop-color="#19C3B1"/>
+            <stop offset="100%" stop-color="#123B68"/>
+
+          </linearGradient>
+        </defs>
+
+        <circle cx="50"
+                cy="50"
+                r="46"
+                fill="url(#logoGradient)"/>
+
+        <path d="M25 72 L50 23 L75 72 L64 72 L57 58 L43 58 L36 72 Z"
+              fill="#fff"/>
+
+        <circle cx="50"
+                cy="49"
+                r="6"
+                fill="#19C3B1"/>
+
+      </svg>
+
+      ABATO TRANSGLOBAL
+
+    </a>
+
+
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+
+    <ul class="nav-links" id="navLinks">
+
+      <li>
+        <a href="/">Home</a>
+      </li>
+
+      <li>
+        <a href="/about/">About</a>
+      </li>
+
+      <li>
+        <a href="/services/" class="active">Services</a>
+      </li>
+
+      <li>
+        <a href="/industries/">Industries</a>
+      </li>
+
+      <li>
+        <a href="/languages/">Languages</a>
+      </li>
+
+      <li>
+        <a href="/#quote" class="nav-cta">
+          Get a Free Quote
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="page-hero">
+
+  <div class="container hero-grid">
+
+    <div>
+
+      <div class="eyebrow">
+        Our Services
+      </div>
+
+      <h1>
+        Professional Language Services
+        <span>Built for Global Communication.</span>
+      </h1>
+
+      <p class="hero-description">
+        From translation and localization to multilingual project
+        management and AI language services, we help organizations
+        prepare, adapt and manage content across languages and markets.
+      </p>
+
+      <a href="/#quote" class="btn btn-primary">
+        Request a Free Quote
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+
+    <div class="hero-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+        alt="Professionals collaborating on an international project">
+
+      <div class="hero-badge">
+
+        <div class="hero-badge-icon">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+
+        <div>
+          <strong>Multilingual Solutions</strong>
+          <small>Human expertise + modern workflows</small>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     INTRO
+========================== -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        One Partner, Multiple Solutions
+      </div>
+
+      <h2>
+        More Than Translation
+      </h2>
+
+      <p>
+        Global content often requires several language services working
+        together. Our services can be used individually or combined
+        into a coordinated multilingual workflow.
+      </p>
+
+    </div>
+
+
+    <div class="intro-grid">
+
+      <div class="intro-card">
+
+        <i class="fa-solid fa-layer-group"></i>
+
+        <h3>
+          End-to-End Language Support
+        </h3>
+
+        <p>
+          From source-content preparation and translation through
+          review, localization, quality assurance and delivery,
+          projects can be managed around your specific requirements.
+        </p>
+
+      </div>
+
+
+      <div class="intro-card">
+
+        <i class="fa-solid fa-sliders"></i>
+
+        <h3>
+          Flexible Project Workflows
+        </h3>
+
+        <p>
+          Choose a single service or combine multiple services
+          depending on your content, target market, languages,
+          deadlines and delivery requirements.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CORE SERVICES
+========================== -->
+
+<section class="section light-section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        Core Services
+      </div>
+
+      <h2>
+        Language Solutions for Different Content Types
+      </h2>
+
+      <p>
+        Our service portfolio covers written, spoken, audiovisual,
+        digital and AI-related language requirements.
+      </p>
+
+    </div>
+
+
+    <div class="service-list">
+
+
+      <!-- 01 -->
+
+      <article class="service-detail">
+
+        <div>
+
+          <div class="service-number">
+            01
+          </div>
+
+          <div class="service-icon">
+            <i class="fa-solid fa-language"></i>
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Translation
+          </h3>
+
+          <p>
+            Professional translation for business, technical,
+            marketing, e-commerce, healthcare, legal, corporate
+            and digital content. Projects can be aligned with
+            terminology, tone, audience and formatting requirements.
+          </p>
+
+          <div class="service-tags">
+
+            <span>Documents</span>
+            <span>Business Content</span>
+            <span>Web Content</span>
+            <span>Marketing</span>
+            <span>Technical</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 -->
+
+      <article class="service-detail">
+
+        <div>
+
+          <div class="service-number">
+            02
+          </div>
+
+          <div class="service-icon">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Localization
+          </h3>
+
+          <p>
+            Adaptation of content for specific countries, regions
+            and audiences. Localization can address language,
+            terminology, cultural references, tone, conventions
+            and market expectations.
+          </p>
+
+          <div class="service-tags">
+
+            <span>Websites</span>
+            <span>Apps</span>
+            <span>Software</span>
+            <span>E-commerce</span>
+            <span>Marketing</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 -->
+
+      <article class="service-detail">
+
+        <div>
+
+          <div class="service-number">
+            03
+          </div>
+
+          <div class="service-icon">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Interpretation
+          </h3>
+
+          <p>
+            Language support for multilingual meetings, interviews,
+            business communication, consultations, events and other
+            situations where spoken communication requires language
+            assistance.
+          </p>
+
+          <div class="service-tags">
+
+            <span>Business Meetings</span>
+            <span>Interviews</span>
+            <span>Events</span>
+            <span>Remote Support</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 04 -->
+
+      <article class="service-detail">
+
+        <div>
+
+          <div class="service-number">
+            04
+          </div>
+
+          <div class="service-icon">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Transcription
+          </h3>
+
+          <p>
+            Conversion of recorded speech into written text for
+            interviews, meetings, research, podcasts, training,
+            audiovisual content and other recordings.
+          </p>
+
+          <div class="service-tags">
+
+            <span>Audio</span>
+            <span>Video</span>
+            <span>Interviews</span>
+            <span>Meetings</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 05 -->
+
+      <article class="service-detail">
+
+        <div>
+
+          <div class="service-number">
+            05
+          </div>
+
+          <div class="service-icon">
+            <i class="fa-solid fa-closed-captioning"></i>
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Subtitling & Audiovisual Localization
+          </h3>
+
+          <p>
+            Subtitle creation, translation and adaptation for
+            films, online videos, training content, social media,
+            entertainment and other audiovisual material.
+          </p>
+
+          <div class="service-tags">
+
+            <span>Subtitles</span>
+            <span>Video</span>
+            <span>Entertainment</span>
+            <span>E-learning</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 06 -->
+
+      <article class="service-detail">
+
+        <div>
+
+          <div class="service-number">
+            06
+          </div>
+
+          <div class="service-icon">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            MTPE & Linguistic Review
+          </h3>
+
+          <p>
+            Human post-editing and review of machine-generated
+            translations. Workflows can focus on fluency, accuracy,
+            terminology, consistency, style and suitability for the
+            intended audience.
+          </p>
+
+          <div class="service-tags">
+
+            <span>MTPE</span>
+            <span>Post-Editing</span>
+            <span>Terminology</span>
+            <span>Review</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <!-- 07 -->
+
+      <article class="service-detail">
+
+        <div>
+
+          <div class="service-number">
+            07
+          </div>
+
+          <div class="service-icon">
+            <i class="fa-solid fa-magnifying-glass-check"></i>
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Linguistic QA & LQA
+          </h3>
+
+          <p>
+            Structured linguistic quality checks designed to identify
+            issues involving grammar, terminology, consistency,
+            meaning, style, formatting and language-market suitability.
+          </p>
+
+          <div class="service-tags">
+
+            <span>QA</span>
+            <span>LQA</span>
+            <span>Terminology</span>
+            <span>Consistency</span>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECT MANAGEMENT
+========================== -->
+
+<section class="section pm-section">
+
+  <div class="container pm-grid">
+
+    <div class="pm-content">
+
+      <div class="eyebrow">
+        Project Management
+      </div>
+
+      <h2>
+        Keep Multilingual Projects Organized From Start to Finish
+      </h2>
+
+      <p>
+        Multilingual projects can involve multiple languages,
+        linguists, reviewers, file types and deadlines. Our project
+        management service is designed to help coordinate those
+        moving parts around a clear delivery workflow.
+      </p>
+
+
+      <div class="pm-features">
+
+        <div class="pm-feature">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Project briefing and requirement coordination
+          </span>
+
+        </div>
+
+
+        <div class="pm-feature">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Language-resource and workflow coordination
+          </span>
+
+        </div>
+
+
+        <div class="pm-feature">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Schedule and delivery tracking
+          </span>
+
+        </div>
+
+
+        <div class="pm-feature">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Terminology and project-information coordination
+          </span>
+
+        </div>
+
+
+        <div class="pm-feature">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Communication between project stakeholders
+          </span>
+
+        </div>
+
+
+        <div class="pm-feature">
+
+          <i class="fa-solid fa-check"></i>
+
+          <span>
+            Final delivery and workflow follow-up
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="pm-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=85"
+        alt="Team coordinating a professional project">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     AI LANGUAGE SERVICES
+========================== -->
+
+<section class="section ai-section">
+
+  <div class="container ai-grid">
+
+
+    <div class="ai-visual">
+
+      <div class="ai-circle">
+
+        <div class="ai-robot">
+
+          <i class="fa-solid fa-robot"></i>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="ai-content">
+
+      <div class="eyebrow">
+        AI Language Services
+      </div>
+
+      <h2>
+        Language Expertise for AI Workflows
+      </h2>
+
+      <p>
+        AI systems depend on high-quality multilingual language data.
+        Our language services can support projects involving
+        linguistic evaluation, AI output review and language-data
+        workflows.
+      </p>
+
+
+      <div class="ai-list">
+
+        <div class="ai-list-item">
+          <i class="fa-solid fa-check"></i>
+          AI output evaluation
+        </div>
+
+        <div class="ai-list-item">
+          <i class="fa-solid fa-check"></i>
+          Linguistic review
+        </div>
+
+        <div class="ai-list-item">
+          <i class="fa-solid fa-check"></i>
+          Language data annotation
+        </div>
+
+        <div class="ai-list-item">
+          <i class="fa-solid fa-check"></i>
+          Text evaluation
+        </div>
+
+        <div class="ai-list-item">
+          <i class="fa-solid fa-check"></i>
+          Audio evaluation
+        </div>
+
+        <div class="ai-list-item">
+          <i class="fa-solid fa-check"></i>
+          Multilingual QA
+        </div>
+
+        <div class="ai-list-item">
+          <i class="fa-solid fa-check"></i>
+          MTPE workflows
+        </div>
+
+        <div class="ai-list-item">
+          <i class="fa-solid fa-check"></i>
+          Language-model support
+        </div>
+
+      </div>
+
+      <br>
+
+      <a href="/#quote" class="btn btn-primary">
+        Discuss an AI Language Project
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     WORKFLOW
+========================== -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+        How We Work
+      </div>
+
+      <h2>
+        A Clear Workflow for Every Project
+      </h2>
+
+      <p>
+        We keep the process straightforward so requirements,
+        language work, quality review and delivery remain aligned.
+      </p>
+
+    </div>
+
+
+    <div class="process-grid">
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          01 — DISCOVER
+        </div>
+
+        <h3>
+          Understand
+        </h3>
+
+        <p>
+          We identify the content, language requirements,
+          audience, format and project objectives.
+        </p>
+
+      </div>
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          02 — PLAN
+        </div>
+
+        <h3>
+          Organize
+        </h3>
+
+        <p>
+          The workflow, resources, terminology and delivery
+          requirements are organized around the project.
+        </p>
+
+      </div>
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          03 — PRODUCE
+        </div>
+
+        <h3>
+          Execute
+        </h3>
+
+        <p>
+          Translation, localization, transcription, subtitling
+          or other required services are performed.
+        </p>
+
+      </div>
+
+
+      <div class="process-card">
+
+        <div class="process-number">
+          04 — REVIEW
+        </div>
+
+        <h3>
+          Deliver
+        </h3>
+
+        <p>
+          The completed work goes through the appropriate review
+          before final delivery.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================== -->
+
+<section class="cta">
+
+  <div class="container">
+
+    <div class="cta-box">
+
+      <div>
+
+        <h2>
+          Have a Multilingual Project?
+        </h2>
+
+        <p>
+          Tell us what you're working on, and we can discuss the
+          language services and workflow your project requires.
+        </p>
+
+      </div>
+
+
+      <a href="/#quote" class="btn btn-primary">
+
+        Request a Free Quote
+
+        <i class="fa-solid fa-arrow-right"></i>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+  <div class="container footer-grid">
+
+
+    <div class="footer-brand">
+
+      <a href="/" class="logo" style="color:#fff;">
+
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+          <defs>
+
+            <linearGradient id="footerGradient"
+                            x1="0%"
+                            y1="0%"
+                            x2="100%"
+                            y2="100%">
+
+              <stop offset="0%" stop-color="#19C3B1"/>
+              <stop offset="100%" stop-color="#123B68"/>
+
+            </linearGradient>
+
+          </defs>
+
+          <circle cx="50"
+                  cy="50"
+                  r="46"
+                  fill="url(#footerGradient)"/>
+
+          <path d="M25 72 L50 23 L75 72 L64 72 L57 58 L43 58 L36 72 Z"
+                fill="#fff"/>
+
+          <circle cx="50"
+                  cy="49"
+                  r="6"
+                  fill="#19C3B1"/>
+
+        </svg>
+
+        ABATO TRANSGLOBAL
+
+      </a>
+
+
+      <p>
+        Professional translation, localization and multilingual
+        language solutions for global communication.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <div class="footer-title">
+        Company
+      </div>
+
+      <ul class="footer-links">
+
+        <li>
+          <a href="/">Home</a>
+        </li>
+
+        <li>
+          <a href="/about/">About</a>
+        </li>
+
+        <li>
+          <a href="/services/">Services</a>
+        </li>
+
+        <li>
+          <a href="/industries/">Industries</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div>
+
+      <div class="footer-title">
+        Services
+      </div>
+
+      <ul class="footer-links">
+
+        <li>
+          <a href="/services/">Translation</a>
+        </li>
+
+        <li>
+          <a href="/services/">Localization</a>
+        </li>
+
+        <li>
+          <a href="/services/">Subtitling</a>
+        </li>
+
+        <li>
+          <a href="/services/">AI Language Services</a>
+        </li>
+
+        <li>
+          <a href="/services/">Project Management</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div>
+
+      <div class="footer-title">
+        Contact
+      </div>
+
+      <ul class="footer-links">
+
+        <li>
+          <a href="mailto:info@abatotransglobal.com">
+            info@abatotransglobal.com
+          </a>
+        </li>
+
+        <li>
+          <a href="/#quote">
+            Request a Quote
+          </a>
+        </li>
+
+        <li>
+          <a href="/languages/">
+            Language Coverage
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © <span id="year"></span> Abato Transglobal. All rights reserved.
+    </span>
+
+    <span>
+      Professional Multilingual Language Solutions
+    </span>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================
+     FLOATING QUOTE BUTTON
+========================== -->
+
+<a href="/#quote" class="floating-quote">
+
+  <i class="fa-solid fa-paper-plane"></i>
+
+  Get a Quote
+
+</a>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
+<script>
+
+  /* Mobile Navigation */
+
+  const menuToggle =
+    document.getElementById("menuToggle");
+
+  const navLinks =
+    document.getElementById("navLinks");
+
+
+  menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+  });
+
+
+  document.querySelectorAll(".nav-links a")
+    .forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+      });
+
+    });
+
+
+  /* Current Year */
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+
+</body>
+</html>
