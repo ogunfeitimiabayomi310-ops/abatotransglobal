@@ -1,3579 +1,2401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Abato Transglobal | Professional Translation & Localization Services</title>
-
-    <meta name="description"
-          content="Abato Transglobal provides professional translation, localization, interpretation, transcription, subtitling, MTPE and linguistic QA services across major and specialized languages.">
-
-    <meta name="keywords"
-          content="translation services, localization, professional translation, multilingual translation, interpretation, transcription, subtitling, MTPE, linguistic QA, language services, Abato Transglobal">
-
-    <meta name="author" content="Abato Transglobal">
-
-    <meta property="og:title"
-          content="Abato Transglobal | Professional Translation & Localization Services">
-
-    <meta property="og:description"
-          content="Professional multilingual translation, localization and language solutions for businesses, organizations and global audiences.">
-
-    <meta property="og:type" content="website">
-
-    <meta property="og:url" content="https://abatotransglobal.com/">
-
-    <link rel="canonical" href="https://abatotransglobal.com/">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
-          rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <style>
-
-        :root {
-            --primary: #19C3B1;
-            --primary-dark: #123B68;
-            --navy: #0B2545;
-            --dark: #102A43;
-            --text: #243B53;
-            --muted: #627D98;
-            --light: #F5FAFC;
-            --white: #FFFFFF;
-            --border: #D9E5EC;
-            --shadow: 0 18px 45px rgba(18, 59, 104, 0.10);
-            --shadow-lg: 0 25px 70px rgba(18, 59, 104, 0.15);
-            --radius: 18px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: "DM Sans", sans-serif;
-            color: var(--text);
-            background: #ffffff;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        button,
-        input,
-        textarea,
-        select {
-            font-family: inherit;
-        }
-
-        .container {
-            width: min(1160px, 92%);
-            margin: 0 auto;
-        }
-
-        /* =========================================
-           TOP BAR
-        ========================================= */
-
-        .topbar {
-            background: var(--navy);
-            color: rgba(255,255,255,.88);
-            padding: 9px 0;
-            font-size: 12px;
-        }
-
-        .topbar-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .topbar-left,
-        .topbar-right {
-            display: flex;
-            align-items: center;
-            gap: 18px;
-        }
-
-        .topbar i {
-            color: var(--primary);
-            margin-right: 5px;
-        }
-
-        /* =========================================
-           NAVIGATION
-        ========================================= */
-
-        .navbar {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background: rgba(255,255,255,.96);
-            backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(18,59,104,.08);
-        }
-
-        .nav-inner {
-            min-height: 78px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-        }
-
-        /* PREMIUM LOGO */
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 11px;
-            flex-shrink: 0;
-        }
-
-        .logo-mark {
-            width: 50px;
-            height: 50px;
-            display: grid;
-            place-items: center;
-            border-radius: 15px;
-            background: #ffffff;
-            border: 1px solid rgba(18,59,104,.12);
-            box-shadow: 0 8px 25px rgba(18,59,104,.11);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .logo-mark svg {
-            width: 40px;
-            height: 40px;
-            display: block;
-        }
-
-        .premium-logo::after {
-            content: "";
-            position: absolute;
-            width: 7px;
-            height: 7px;
-            background: var(--primary);
-            border-radius: 50%;
-            bottom: 5px;
-            right: 6px;
-            opacity: .85;
-        }
-
-        .brand-text strong {
-            display: block;
-            color: var(--navy);
-            font-family: "Manrope", sans-serif;
-            font-size: 16px;
-            font-weight: 800;
-            letter-spacing: -.4px;
-        }
-
-        .brand-text span {
-            display: block;
-            color: var(--muted);
-            font-size: 9px;
-            text-transform: uppercase;
-            letter-spacing: 1.6px;
-            margin-top: 1px;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-        }
-
-        .nav-links a {
-            color: var(--dark);
-            font-size: 13px;
-            font-weight: 600;
-            transition: .25s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-dark);
-        }
-
-        .nav-cta {
-            background: var(--primary-dark);
-            color: white !important;
-            padding: 12px 18px;
-            border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(18,59,104,.15);
-        }
-
-        .nav-cta:hover {
-            background: #0B2D52;
-            transform: translateY(-1px);
-        }
-
-        .menu-btn {
-            display: none;
-            width: 42px;
-            height: 42px;
-            border: 1px solid var(--border);
-            background: white;
-            border-radius: 10px;
-            color: var(--navy);
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        /* =========================================
-           HERO
-        ========================================= */
-
-        .hero {
-            position: relative;
-            padding: 90px 0 80px;
-            background:
-                radial-gradient(circle at 10% 20%, rgba(25,195,177,.10), transparent 28%),
-                radial-gradient(circle at 90% 20%, rgba(18,59,104,.09), transparent 30%),
-                linear-gradient(180deg, #F8FCFD 0%, #FFFFFF 100%);
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            width: 420px;
-            height: 420px;
-            border: 1px solid rgba(25,195,177,.08);
-            border-radius: 50%;
-            right: -180px;
-            top: -180px;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.05fr .95fr;
-            align-items: center;
-            gap: 70px;
-        }
-
-        .eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 7px 12px;
-            border-radius: 100px;
-            background: rgba(25,195,177,.09);
-            color: var(--primary-dark);
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 18px;
-        }
-
-        .eyebrow i {
-            color: var(--primary);
-        }
-
-        .hero h1 {
-            font-family: "Manrope", sans-serif;
-            font-size: clamp(42px, 5vw, 68px);
-            line-height: 1.04;
-            letter-spacing: -2.7px;
-            color: var(--navy);
-            margin-bottom: 22px;
-        }
-
-        .hero h1 span {
-            color: var(--primary-dark);
-        }
-
-        .hero p {
-            color: var(--muted);
-            max-width: 650px;
-            font-size: 17px;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 9px;
-            padding: 14px 20px;
-            border-radius: 11px;
-            font-size: 13px;
-            font-weight: 700;
-            transition: .25s ease;
-        }
-
-        .btn-primary {
-            background: var(--primary-dark);
-            color: white;
-            box-shadow: 0 12px 25px rgba(18,59,104,.18);
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 17px 32px rgba(18,59,104,.23);
-        }
-
-        .btn-outline {
-            border: 1px solid var(--border);
-            color: var(--navy);
-            background: white;
-        }
-
-        .btn-outline:hover {
-            border-color: var(--primary);
-            color: var(--primary-dark);
-        }
-
-        /* HERO CARD */
-
-        .hero-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 24px;
-            padding: 25px;
-            box-shadow: var(--shadow-lg);
-            position: relative;
-        }
-
-        .hero-card-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 22px;
-        }
-
-        .hero-card-title {
-            font-family: "Manrope", sans-serif;
-            font-weight: 800;
-            color: var(--navy);
-            font-size: 14px;
-        }
-
-        .live-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 10px;
-            font-weight: 700;
-            color: #167A68;
-            background: rgba(25,195,177,.10);
-            padding: 6px 9px;
-            border-radius: 100px;
-        }
-
-        .live-dot {
-            width: 6px;
-            height: 6px;
-            background: var(--primary);
-            border-radius: 50%;
-        }
-
-        .language-flow {
-            display: grid;
-            grid-template-columns: 1fr 55px 1fr;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 22px;
-        }
-
-        .language-box {
-            padding: 17px;
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            background: #FAFCFD;
-        }
-
-        .language-box small {
-            display: block;
-            color: var(--muted);
-            font-size: 9px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
-        }
-
-        .language-box strong {
-            color: var(--navy);
-            font-size: 14px;
-        }
-
-        .flow-icon {
-            width: 42px;
-            height: 42px;
-            margin: auto;
-            display: grid;
-            place-items: center;
-            border-radius: 50%;
-            background: var(--primary);
-            color: white;
-            font-size: 13px;
-        }
-
-        .hero-services {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 9px;
-        }
-
-        .hero-service {
-            padding: 11px;
-            background: #F7FAFC;
-            border-radius: 10px;
-            font-size: 11px;
-            color: var(--dark);
-            font-weight: 600;
-        }
-
-        .hero-service i {
-            color: var(--primary-dark);
-            margin-right: 5px;
-        }
-
-        /* =========================================
-           TRUST STRIP
-        ========================================= */
-
-        .trust-strip {
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            background: white;
-        }
-
-        .trust-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        .trust-item {
-            padding: 22px 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            border-right: 1px solid var(--border);
-        }
-
-        .trust-item:last-child {
-            border-right: none;
-        }
-
-        .trust-item i {
-            color: var(--primary-dark);
-        }
-
-        .trust-item span {
-            font-size: 11px;
-            font-weight: 700;
-            color: var(--dark);
-        }
-
-        /* =========================================
-           GENERAL SECTION
-        ========================================= */
-
-        section {
-            padding: 90px 0;
-        }
-
-        .section-head {
-            text-align: center;
-            max-width: 760px;
-            margin: 0 auto 50px;
-        }
-
-        .section-label {
-            display: inline-block;
-            color: var(--primary-dark);
-            font-size: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1.8px;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
-
-        .section-head h2 {
-            font-family: "Manrope", sans-serif;
-            font-size: clamp(30px, 4vw, 45px);
-            line-height: 1.12;
-            color: var(--navy);
-            letter-spacing: -1.4px;
-            margin-bottom: 15px;
-        }
-
-        .section-head p {
-            color: var(--muted);
-            font-size: 15px;
-            line-height: 1.8;
-        }
-
-        /* =========================================
-           SERVICES
-        ========================================= */
-
-        .services {
-            background: #F8FBFC;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .service-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            padding: 28px;
-            transition: .3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow);
-            border-color: rgba(25,195,177,.35);
-        }
-
-        .service-icon {
-            width: 50px;
-            height: 50px;
-            display: grid;
-            place-items: center;
-            background: rgba(25,195,177,.10);
-            color: var(--primary-dark);
-            border-radius: 14px;
-            margin-bottom: 18px;
-            font-size: 18px;
-        }
-
-        .service-card h3 {
-            font-family: "Manrope", sans-serif;
-            color: var(--navy);
-            font-size: 17px;
-            margin-bottom: 9px;
-        }
-
-        .service-card p {
-            color: var(--muted);
-            font-size: 12px;
-            line-height: 1.7;
-        }
-
-        /* =========================================
-           WHY ABATO
-        ========================================= */
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: .9fr 1.1fr;
-            gap: 70px;
-            align-items: center;
-        }
-
-        .why-content h2 {
-            font-family: "Manrope", sans-serif;
-            color: var(--navy);
-            font-size: clamp(30px, 4vw, 44px);
-            line-height: 1.12;
-            letter-spacing: -1.5px;
-            margin-bottom: 18px;
-        }
-
-        .why-content > p {
-            color: var(--muted);
-            line-height: 1.8;
-            margin-bottom: 25px;
-            font-size: 14px;
-        }
-
-        .why-points {
-            display: grid;
-            gap: 15px;
-        }
-
-        .why-point {
-            display: flex;
-            gap: 13px;
-        }
-
-        .why-point i {
-            width: 34px;
-            height: 34px;
-            flex: 0 0 34px;
-            display: grid;
-            place-items: center;
-            border-radius: 10px;
-            background: rgba(25,195,177,.10);
-            color: var(--primary-dark);
-            font-size: 12px;
-        }
-
-        .why-point strong {
-            display: block;
-            color: var(--navy);
-            font-size: 13px;
-            margin-bottom: 2px;
-        }
-
-        .why-point span {
-            display: block;
-            color: var(--muted);
-            font-size: 11px;
-        }
-
-        .why-panel {
-            background: linear-gradient(145deg, #0B2545, #123B68);
-            border-radius: 24px;
-            padding: 35px;
-            color: white;
-            box-shadow: var(--shadow-lg);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .why-panel::before {
-            content: "";
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            border: 1px solid rgba(255,255,255,.10);
-            border-radius: 50%;
-            right: -70px;
-            top: -70px;
-        }
-
-        .why-panel h3 {
-            font-family: "Manrope", sans-serif;
-            font-size: 24px;
-            margin-bottom: 15px;
-            position: relative;
-        }
-
-        .why-panel p {
-            color: rgba(255,255,255,.74);
-            font-size: 13px;
-            line-height: 1.8;
-            position: relative;
-        }
-
-        /* =========================================
-           INDUSTRIES
-        ========================================= */
-
-        .industries {
-            background: #F8FBFC;
-        }
-
-        .industry-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 14px;
-        }
-
-        .industry {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 22px;
-            transition: .25s ease;
-        }
-
-        .industry:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow);
-        }
-
-        .industry i {
-            color: var(--primary-dark);
-            font-size: 18px;
-            margin-bottom: 12px;
-        }
-
-        .industry h3 {
-            font-size: 13px;
-            color: var(--navy);
-            margin-bottom: 5px;
-        }
-
-        .industry p {
-            font-size: 10px;
-            color: var(--muted);
-        }
-
-        /* =========================================
-           LANGUAGES
-        ========================================= */
-
-        .languages {
-            background: white;
-        }
-
-        .language-highlights {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            max-width: 1050px;
-            margin: 0 auto 30px;
-        }
-
-        .language-highlight {
-            display: flex;
-            align-items: center;
-            gap: 13px;
-            padding: 17px;
-            background: #ffffff;
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            box-shadow: 0 8px 25px rgba(18,59,104,.04);
-        }
-
-        .language-highlight i {
-            width: 42px;
-            height: 42px;
-            flex: 0 0 42px;
-            display: grid;
-            place-items: center;
-            border-radius: 11px;
-            background: rgba(25,195,177,.10);
-            color: var(--primary-dark);
-        }
-
-        .language-highlight strong {
-            display: block;
-            color: var(--navy);
-            font-size: 12px;
-        }
-
-        .language-highlight span {
-            display: block;
-            color: var(--muted);
-            font-size: 10px;
-            line-height: 1.4;
-            margin-top: 3px;
-        }
-
-        .language-cloud {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-            max-width: 1080px;
-            margin: 0 auto;
-        }
-
-        .language-tag {
-            padding: 9px 13px;
-            border: 1px solid var(--border);
-            border-radius: 100px;
-            color: var(--dark);
-            background: #FAFCFD;
-            font-size: 11px;
-            font-weight: 600;
-            transition: .25s ease;
-        }
-
-        .language-tag:hover {
-            background: var(--primary-dark);
-            color: white;
-            border-color: var(--primary-dark);
-            transform: translateY(-2px);
-        }
-
-        .language-note {
-            max-width: 760px;
-            margin: 25px auto 0;
-            text-align: center;
-            color: var(--muted);
-            font-size: 11px;
-            line-height: 1.7;
-        }
-
-        /* =========================================
-           PROCESS
-        ========================================= */
-
-        .process {
-            background: #F8FBFC;
-        }
-
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
-
-        .process-card {
-            text-align: center;
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 17px;
-            padding: 28px 20px;
-            position: relative;
-        }
-
-        .process-number {
-            width: 38px;
-            height: 38px;
-            display: grid;
-            place-items: center;
-            margin: 0 auto 14px;
-            border-radius: 50%;
-            background: var(--primary-dark);
-            color: white;
-            font-size: 12px;
-            font-weight: 800;
-        }
-
-        .process-card h3 {
-            color: var(--navy);
-            font-family: "Manrope", sans-serif;
-            font-size: 14px;
-            margin-bottom: 7px;
-        }
-
-        .process-card p {
-            color: var(--muted);
-            font-size: 10px;
-            line-height: 1.7;
-        }
-
-        /* =========================================
-           TRUST / CREDENTIALS
-        ========================================= */
-
-        .credentials {
-            background: white;
-        }
-
-        .credentials-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-            margin-top: 35px;
-        }
-
-        .credential-card {
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 22px;
-            background: #FBFDFE;
-        }
-
-        .credential-card i {
-            color: var(--primary-dark);
-            font-size: 17px;
-            margin-bottom: 10px;
-        }
-
-        .credential-card h3 {
-            color: var(--navy);
-            font-size: 14px;
-            margin-bottom: 6px;
-        }
-
-        .credential-card p {
-            color: var(--muted);
-            font-size: 11px;
-            line-height: 1.7;
-        }
-
-        /* =========================================
-           CLIENT EXPERIENCE
-        ========================================= */
-
-        .experience {
-            background: #F8FBFC;
-        }
-
-        .experience-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-        .experience-card {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 17px;
-            padding: 25px;
-        }
-
-        .quote-mark {
-            color: var(--primary);
-            font-size: 27px;
-            margin-bottom: 12px;
-        }
-
-        .experience-card p {
-            color: var(--text);
-            font-size: 12px;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        .experience-card strong {
-            font-size: 11px;
-            color: var(--navy);
-        }
-
-        .experience-note {
-            text-align: center;
-            color: var(--muted);
-            font-size: 10px;
-            margin-top: 25px;
-        }
-
-        /* =========================================
-           FAQ
-        ========================================= */
-
-        .faq {
-            background: white;
-        }
-
-        .faq-list {
-            max-width: 850px;
-            margin: auto;
-        }
-
-        .faq-item {
-            border-bottom: 1px solid var(--border);
-        }
-
-        .faq-question {
-            width: 100%;
-            border: none;
-            background: none;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            padding: 20px 0;
-            cursor: pointer;
-            text-align: left;
-            color: var(--navy);
-            font-size: 13px;
-            font-weight: 700;
-        }
-
-        .faq-question i {
-            transition: .25s ease;
-            color: var(--primary-dark);
-        }
-
-        .faq-answer {
-            display: none;
-            padding: 0 35px 20px 0;
-            color: var(--muted);
-            font-size: 12px;
-            line-height: 1.8;
-        }
-
-        .faq-item.active .faq-answer {
-            display: block;
-        }
-
-        .faq-item.active .faq-question i {
-            transform: rotate(180deg);
-        }
-
-        /* =========================================
-           CTA
-        ========================================= */
-
-        .cta {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #0B2545, #123B68);
-            color: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta::before {
-            content: "";
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border: 1px solid rgba(255,255,255,.08);
-            border-radius: 50%;
-            right: -230px;
-            top: -250px;
-        }
-
-        .cta-inner {
-            position: relative;
-            text-align: center;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .cta h2 {
-            font-family: "Manrope", sans-serif;
-            font-size: clamp(31px, 4vw, 47px);
-            line-height: 1.1;
-            letter-spacing: -1.5px;
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-            color: rgba(255,255,255,.75);
-            font-size: 14px;
-            line-height: 1.8;
-            margin-bottom: 25px;
-        }
-
-        .cta .btn {
-            background: var(--primary);
-            color: var(--navy);
-        }
-
-        /* =========================================
-           QUOTE FORM
-        ========================================= */
-
-        .quote {
-            background: #F8FBFC;
-        }
-
-        .quote-grid {
-            display: grid;
-            grid-template-columns: .75fr 1.25fr;
-            gap: 50px;
-            align-items: start;
-        }
-
-        .quote-info h2 {
-            font-family: "Manrope", sans-serif;
-            color: var(--navy);
-            font-size: 38px;
-            line-height: 1.15;
-            letter-spacing: -1.2px;
-            margin-bottom: 15px;
-        }
-
-        .quote-info p {
-            color: var(--muted);
-            font-size: 13px;
-            line-height: 1.8;
-            margin-bottom: 22px;
-        }
-
-        .quote-contact {
-            display: grid;
-            gap: 12px;
-        }
-
-        .quote-contact div {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 12px;
-            color: var(--dark);
-        }
-
-        .quote-contact i {
-            color: var(--primary-dark);
-            width: 20px;
-        }
-
-        .quote-form {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            padding: 28px;
-            box-shadow: var(--shadow);
-        }
-
-        .form-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-        }
-
-        .form-group {
-            display: grid;
-            gap: 6px;
-        }
-
-        .form-group.full {
-            grid-column: 1 / -1;
-        }
-
-        .form-group label {
-            color: var(--navy);
-            font-size: 10px;
-            font-weight: 700;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            border: 1px solid var(--border);
-            background: #FBFDFE;
-            border-radius: 10px;
-            padding: 12px;
-            outline: none;
-            font-size: 11px;
-            color: var(--dark);
-            transition: .2s ease;
-        }
-
-        .form-group textarea {
-            min-height: 110px;
-            resize: vertical;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(25,195,177,.08);
-        }
-
-        .form-submit {
-            margin-top: 17px;
-            width: 100%;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* =========================================
-           FOOTER
-        ========================================= */
-
-        footer {
-            background: #071A30;
-            color: white;
-            padding: 65px 0 25px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1.4fr 1fr 1fr 1fr;
-            gap: 45px;
-            padding-bottom: 45px;
-            border-bottom: 1px solid rgba(255,255,255,.09);
-        }
-
-        .footer-brand .brand-text strong {
-            color: white;
-        }
-
-        .footer-brand .brand-text span {
-            color: rgba(255,255,255,.55);
-        }
-
-        .footer-description {
-            color: rgba(255,255,255,.60);
-            font-size: 11px;
-            line-height: 1.8;
-            max-width: 310px;
-            margin: 18px 0;
-        }
-
-        .socials {
-            display: flex;
-            gap: 8px;
-        }
-
-        .socials a {
-            width: 34px;
-            height: 34px;
-            display: grid;
-            place-items: center;
-            border: 1px solid rgba(255,255,255,.12);
-            border-radius: 9px;
-            color: rgba(255,255,255,.75);
-            font-size: 12px;
-        }
-
-        .socials a:hover {
-            background: rgba(25,195,177,.12);
-            color: var(--primary);
-        }
-
-        .footer-col h3 {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 17px;
-        }
-
-        .footer-col a {
-            display: block;
-            color: rgba(255,255,255,.58);
-            font-size: 11px;
-            margin-bottom: 9px;
-        }
-
-        .footer-col a:hover {
-            color: var(--primary);
-        }
-
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            padding-top: 22px;
-            color: rgba(255,255,255,.42);
-            font-size: 9px;
-        }
-
-        /* =========================================
-           FLOATING QUOTE BUTTON
-        ========================================= */
-
-        .floating-quote {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            z-index: 900;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--primary);
-            color: var(--navy);
-            padding: 12px 16px;
-            border-radius: 100px;
-            box-shadow: 0 15px 35px rgba(18,59,104,.20);
-            font-size: 11px;
-            font-weight: 800;
-        }
-
-        .floating-quote:hover {
-            transform: translateY(-2px);
-        }
-
-        /* =========================================
-           RESPONSIVE
-        ========================================= */
-
-        @media(max-width: 1000px) {
-
-            .nav-links {
-                gap: 15px;
-            }
-
-            .hero-grid,
-            .why-grid,
-            .quote-grid {
-                gap: 35px;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .industry-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .process-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media(max-width: 780px) {
-
-            .topbar-left {
-                display: none;
-            }
-
-            .topbar-inner {
-                justify-content: center;
-            }
-
-            .nav-inner {
-                min-height: 70px;
-            }
-
-            .menu-btn {
-                display: grid;
-                place-items: center;
-            }
-
-            .nav-links {
-                position: absolute;
-                left: 4%;
-                right: 4%;
-                top: 76px;
-                display: none;
-                flex-direction: column;
-                align-items: stretch;
-                gap: 0;
-                background: white;
-                border: 1px solid var(--border);
-                border-radius: 15px;
-                padding: 10px;
-                box-shadow: var(--shadow-lg);
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links a {
-                padding: 12px;
-            }
-
-            .nav-cta {
-                text-align: center;
-                margin-top: 5px;
-            }
-
-            .hero {
-                padding: 65px 0;
-            }
-
-            .hero-grid,
-            .why-grid,
-            .quote-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-card {
-                max-width: 600px;
-            }
-
-            .trust-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .trust-item:nth-child(2) {
-                border-right: none;
-            }
-
-            .trust-item:nth-child(-n+2) {
-                border-bottom: 1px solid var(--border);
-            }
-
-            .language-highlights {
-                grid-template-columns: 1fr;
-            }
-
-            .experience-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .credentials-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media(max-width: 560px) {
-
-            section {
-                padding: 65px 0;
-            }
-
-            .hero h1 {
-                font-size: 40px;
-                letter-spacing: -1.8px;
-            }
-
-            .hero p {
-                font-size: 14px;
-            }
-
-            .services-grid,
-            .industry-grid,
-            .process-grid,
-            .footer-grid,
-            .form-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .form-group.full {
-                grid-column: auto;
-            }
-
-            .trust-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .trust-item,
-            .trust-item:nth-child(2) {
-                border-right: none;
-                border-bottom: 1px solid var(--border);
-            }
-
-            .trust-item:last-child {
-                border-bottom: none;
-            }
-
-            .language-flow {
-                grid-template-columns: 1fr;
-            }
-
-            .flow-icon {
-                transform: rotate(90deg);
-            }
-
-            .hero-services {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            .floating-quote {
-                right: 12px;
-                bottom: 12px;
-            }
-        }
-
-    </style>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Abato Transglobal | Translation & Localization Services</title>
+
+  <meta name="description"
+        content="Abato Transglobal provides professional translation, localization, interpretation, subtitling, transcription, MTPE, linguistic QA, AI language services and project management.">
+
+  <meta name="keywords"
+        content="translation services, localization, interpretation, transcription, subtitling, MTPE, linguistic QA, AI language services, project management, multilingual translation">
+
+  <meta name="author" content="Abato Transglobal">
+
+  <link rel="canonical" href="https://abatotransglobal.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Abato Transglobal | Professional Language Services">
+  <meta property="og:description"
+        content="Professional translation, localization and multilingual language solutions for global communication.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abatotransglobal.com/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+
+    :root {
+      --teal: #19c3b1;
+      --teal-dark: #0d9e91;
+      --blue: #123b68;
+      --blue-dark: #0a2747;
+      --text: #17324d;
+      --muted: #68798b;
+      --light: #f5f9fc;
+      --white: #ffffff;
+      --border: #e3ebf2;
+      --shadow: 0 15px 40px rgba(18,59,104,.09);
+      --radius: 20px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--text);
+      background: #ffffff;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Manrope", sans-serif;
+      line-height: 1.2;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1140px, 92%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-light {
+      background: var(--light);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--teal-dark);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--teal);
+    }
+
+    .section-title {
+      max-width: 720px;
+      margin-bottom: 18px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      color: var(--blue);
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(18,59,104,.08);
+    }
+
+    .nav {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+      color: var(--blue);
+      font-size: 18px;
+      white-space: nowrap;
+    }
+
+    .logo svg {
+      width: 42px;
+      height: 42px;
+      flex-shrink: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      color: #3e5368;
+      transition: .25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--teal-dark);
+    }
+
+    .nav-cta {
+      padding: 12px 19px;
+      background: var(--blue);
+      color: #fff !important;
+      border-radius: 10px;
+    }
+
+    .nav-cta:hover {
+      background: var(--teal-dark);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: var(--blue);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 80px 0 85px;
+      background:
+        radial-gradient(circle at 90% 15%, rgba(25,195,177,.14), transparent 28%),
+        radial-gradient(circle at 5% 90%, rgba(18,59,104,.08), transparent 30%),
+        #ffffff;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .hero h1 {
+      color: var(--blue);
+      font-size: clamp(42px, 5.2vw, 68px);
+      letter-spacing: -2px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--teal-dark);
+    }
+
+    .hero-text {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 640px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 21px;
+      border-radius: 11px;
+      font-weight: 700;
+      transition: .25s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--teal);
+      color: var(--blue-dark);
+    }
+
+    .btn-primary:hover {
+      background: var(--teal-dark);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--blue);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--teal);
+      transform: translateY(-2px);
+    }
+
+    .hero-image {
+      position: relative;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .floating-card {
+      position: absolute;
+      left: -25px;
+      bottom: 28px;
+      background: #fff;
+      padding: 18px 20px;
+      border-radius: 15px;
+      box-shadow: 0 15px 40px rgba(18,59,104,.16);
+      display: flex;
+      align-items: center;
+      gap: 13px;
+    }
+
+    .floating-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(25,195,177,.13);
+      color: var(--teal-dark);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+    }
+
+    .floating-card strong {
+      display: block;
+      color: var(--blue);
+      font-size: 14px;
+    }
+
+    .floating-card small {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* =========================
+       TRUST
+    ========================== */
+
+    .trust-strip {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: #fff;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .trust-item {
+      padding: 23px 15px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .trust-item:last-child {
+      border-right: none;
+    }
+
+    .trust-item i {
+      color: var(--teal-dark);
+      margin-right: 7px;
+    }
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 38px;
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: .25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(25,195,177,.55);
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: rgba(25,195,177,.12);
+      color: var(--teal-dark);
+      font-size: 21px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      color: var(--blue);
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .service-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--teal-dark);
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    /* =========================
+       ABOUT / WHY
+    ========================== */
+
+    .split {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-image img {
+      height: 440px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+
+    .about-content h2 {
+      font-size: clamp(31px, 4vw, 45px);
+      color: var(--blue);
+      margin-bottom: 18px;
+    }
+
+    .about-content > p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .feature i {
+      color: var(--teal-dark);
+      margin-top: 4px;
+    }
+
+    .feature strong {
+      display: block;
+      color: var(--blue);
+      margin-bottom: 3px;
+    }
+
+    .feature span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       INDUSTRIES
+    ========================== */
+
+    .industry-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .industry {
+      padding: 22px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      color: var(--blue);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .industry i {
+      color: var(--teal-dark);
+    }
+
+    /* =========================
+       LANGUAGES
+    ========================== */
+
+    .language-box {
+      background: linear-gradient(135deg, var(--blue), #1b567f);
+      color: #fff;
+      padding: 48px;
+      border-radius: 25px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .language-box::after {
+      content: "";
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 35px solid rgba(255,255,255,.06);
+      right: -70px;
+      top: -70px;
+    }
+
+    .language-box h2 {
+      font-size: 35px;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .language-box p {
+      color: rgba(255,255,255,.78);
+      max-width: 680px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .language-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 25px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .language-tags span {
+      padding: 8px 13px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 100px;
+      font-size: 13px;
+    }
+
+    /* =========================
+       PROCESS
+    ========================== */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .process {
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fff;
+    }
+
+    .process-number {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--teal-dark);
+      margin-bottom: 14px;
+    }
+
+    .process h3 {
+      color: var(--blue);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .process p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta {
+      padding: 70px 0;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, var(--blue), #174e78);
+      color: #fff;
+      padding: 55px;
+      border-radius: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .cta-box h2 {
+      font-size: 37px;
+      margin-bottom: 10px;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,.76);
+      max-width: 600px;
+    }
+
+    /* =========================
+       QUOTE FORM
+    ========================== */
+
+    .quote-section {
+      background: var(--light);
+    }
+
+    .quote-layout {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 50px;
+      align-items: start;
+    }
+
+    .quote-info h2 {
+      font-size: 40px;
+      color: var(--blue);
+      margin-bottom: 15px;
+    }
+
+    .quote-info p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .contact-mini {
+      display: flex;
+      gap: 13px;
+      margin: 15px 0;
+      align-items: center;
+    }
+
+    .contact-mini i {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(25,195,177,.12);
+      display: grid;
+      place-items: center;
+      color: var(--teal-dark);
+    }
+
+    .contact-mini strong {
+      color: var(--blue);
+      display: block;
+      font-size: 13px;
+    }
+
+    .contact-mini span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .quote-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 22px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--blue);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      background: #fbfdff;
+      border-radius: 9px;
+      padding: 12px 13px;
+      font-family: inherit;
+      font-size: 14px;
+      color: var(--text);
+      outline: none;
+      transition: .2s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(25,195,177,.08);
+    }
+
+    textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .form-note {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 12px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #081f38;
+      color: #fff;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr .8fr .8fr .9fr;
+      gap: 35px;
+      padding-bottom: 35px;
+    }
+
+    .footer-brand p {
+      color: rgba(255,255,255,.64);
+      font-size: 13px;
+      margin-top: 15px;
+      max-width: 340px;
+    }
+
+    .footer-title {
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 9px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,.62);
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: var(--teal);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 20px;
+      color: rgba(255,255,255,.5);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    /* =========================
+       AI ASSISTANT
+    ========================== */
+
+    .ai-button {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 2000;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      border: none;
+      background: var(--teal);
+      color: var(--blue-dark);
+      box-shadow: 0 10px 30px rgba(18,59,104,.25);
+      cursor: pointer;
+      font-size: 22px;
+      transition: .25s;
+    }
+
+    .ai-button:hover {
+      transform: translateY(-3px);
+    }
+
+    .ai-chat {
+      position: fixed;
+      right: 22px;
+      bottom: 92px;
+      width: 350px;
+      max-width: calc(100vw - 35px);
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 20px 60px rgba(18,59,104,.22);
+      z-index: 1999;
+      overflow: hidden;
+      display: none;
+    }
+
+    .ai-chat.active {
+      display: block;
+    }
+
+    .ai-header {
+      background: var(--blue);
+      color: #fff;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+
+    .ai-header-icon {
+      width: 38px;
+      height: 38px;
+      background: rgba(25,195,177,.2);
+      color: var(--teal);
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+    }
+
+    .ai-header strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .ai-header small {
+      color: rgba(255,255,255,.65);
+      font-size: 11px;
+    }
+
+    .ai-messages {
+      padding: 15px;
+      height: 250px;
+      overflow-y: auto;
+      background: #f8fbfd;
+    }
+
+    .ai-message {
+      max-width: 88%;
+      padding: 10px 12px;
+      border-radius: 11px;
+      margin-bottom: 9px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
+    .ai-message.bot {
+      background: #fff;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .ai-message.user {
+      margin-left: auto;
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .ai-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 10px 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .ai-option {
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--blue);
+      border-radius: 20px;
+      padding: 7px 10px;
+      font-size: 11px;
+      cursor: pointer;
+    }
+
+    .ai-option:hover {
+      border-color: var(--teal);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .hero-grid,
+      .split,
+      .quote-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image {
+        order: -1;
+      }
+
+      .hero-image img {
+        height: 350px;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .industry-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cta-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 700px) {
+
+      .nav {
+        height: 70px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 4%;
+        gap: 17px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+
+      .hero-image {
+        order: 0;
+      }
+
+      .hero-image img {
+        height: 280px;
+      }
+
+      .floating-card {
+        left: 15px;
+        bottom: 15px;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-item {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .services-grid,
+      .industry-grid,
+      .process-grid,
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 65px 0;
+      }
+
+      .language-box,
+      .cta-box,
+      .quote-form {
+        padding: 28px 22px;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .ai-chat {
+        right: 15px;
+        bottom: 88px;
+      }
+
+      .ai-button {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
 
-<!-- =========================================
-     TOP BAR
-========================================= -->
+<!-- =========================
+     HEADER
+========================== -->
 
-<div class="topbar">
+<header>
+  <div class="container nav">
 
-    <div class="container topbar-inner">
+    <a href="/" class="logo">
 
-        <div class="topbar-left">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#19C3B1"/>
+            <stop offset="100%" stop-color="#123B68"/>
+          </linearGradient>
+        </defs>
 
-            <span>
-                <i class="fa-solid fa-earth-americas"></i>
-                Multilingual Language Solutions
-            </span>
+        <circle cx="50" cy="50" r="46" fill="url(#logoGradient)"/>
 
-            <span>
-                <i class="fa-solid fa-shield-halved"></i>
-                Professional & Confidential
-            </span>
+        <path d="M25 72 L50 23 L75 72 L64 72 L57 58 L43 58 L36 72 Z"
+              fill="#fff"/>
 
-            <span>
-                <i class="fa-solid fa-circle-check"></i>
-                Quality-Focused
-            </span>
+        <circle cx="50" cy="49" r="6" fill="#19C3B1"/>
+      </svg>
 
-        </div>
+      ABATO TRANSGLOBAL
 
-        <div class="topbar-right">
+    </a>
 
-            <span>
-                <i class="fa-solid fa-envelope"></i>
-                abatotransglobal@email.com
-            </span>
-
-        </div>
-
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fa-solid fa-bars"></i>
     </div>
 
-</div>
+    <ul class="nav-links" id="navLinks">
 
+      <li><a href="/">Home</a></li>
 
-<!-- =========================================
-     NAVIGATION
-========================================= -->
+      <li><a href="/about/">About</a></li>
 
-<header class="navbar">
+      <li><a href="/services/">Services</a></li>
 
-    <div class="container nav-inner">
+      <li><a href="/industries/">Industries</a></li>
 
-        <a href="/" class="brand">
+      <li><a href="/languages/">Languages</a></li>
 
-            <div class="logo-mark premium-logo">
-
-                <svg viewBox="0 0 100 100" aria-hidden="true">
-
-                    <defs>
-
-                        <linearGradient id="logoGradient"
-                                        x1="0%"
-                                        y1="0%"
-                                        x2="100%"
-                                        y2="100%">
-
-                            <stop offset="0%"
-                                  stop-color="#19C3B1"/>
-
-                            <stop offset="100%"
-                                  stop-color="#123B68"/>
-
-                        </linearGradient>
-
-                    </defs>
-
-                    <circle cx="50"
-                            cy="50"
-                            r="38"
-                            fill="none"
-                            stroke="url(#logoGradient)"
-                            stroke-width="5"
-                            stroke-linecap="round"
-                            stroke-dasharray="145 45"/>
-
-                    <path d="M30 68 L50 28 L70 68"
-                          fill="none"
-                          stroke="#123B68"
-                          stroke-width="7"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"/>
-
-                    <path d="M39 53 H61"
-                          stroke="#19C3B1"
-                          stroke-width="6"
-                          stroke-linecap="round"/>
-
-                    <circle cx="72"
-                            cy="28"
-                            r="5"
-                            fill="#19C3B1"/>
-
-                </svg>
-
-            </div>
-
-            <div class="brand-text">
-
-                <strong>ABATO TRANSGLOBAL</strong>
-
-                <span>Language • Localization • Global Reach</span>
-
-            </div>
-
+      <li>
+        <a href="#quote" class="nav-cta">
+          Get a Free Quote
         </a>
+      </li>
 
+    </ul>
 
-        <nav class="nav-links" id="navLinks">
-
-            <a href="/">Home</a>
-
-            <a href="/about/">About</a>
-
-            <a href="/services/">Services</a>
-
-            <a href="/industries/">Industries</a>
-
-            <a href="/languages/">Languages</a>
-
-            <a href="/contact/">Contact</a>
-
-            <a href="#quote"
-               class="nav-cta">
-                Get a Free Quote
-            </a>
-
-        </nav>
-
-
-        <button class="menu-btn"
-                id="menuBtn"
-                aria-label="Open navigation menu">
-
-            <i class="fa-solid fa-bars"></i>
-
-        </button>
-
-    </div>
-
+  </div>
 </header>
 
 
-<!-- =========================================
+<!-- =========================
      HERO
-========================================= -->
+========================== -->
 
 <section class="hero">
 
-    <div class="container hero-grid">
+  <div class="container hero-grid">
 
-        <div class="hero-content">
+    <div>
 
-            <div class="eyebrow">
+      <div class="eyebrow">
+        Global Language Solutions
+      </div>
 
-                <i class="fa-solid fa-globe"></i>
+      <h1>
+        Your Message.<br>
+        <span>Every Language.</span>
+      </h1>
 
-                Professional Multilingual Services
+      <p class="hero-text">
+        Professional translation, localization and multilingual
+        language solutions designed to help businesses communicate
+        clearly across markets.
+      </p>
 
-            </div>
+      <div class="hero-buttons">
 
+        <a href="#quote" class="btn btn-primary">
+          Request a Free Quote
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
 
-            <h1>
+        <a href="/services/" class="btn btn-secondary">
+          Explore Services
+        </a>
 
-                Your Message.
-                <span>Every Language.</span>
-                Every Market.
-
-            </h1>
-
-
-            <p>
-
-                Abato Transglobal helps businesses, organizations and
-                global teams communicate clearly across languages and
-                cultures through professional translation, localization
-                and multilingual language solutions.
-
-            </p>
-
-
-            <div class="hero-buttons">
-
-                <a href="#quote"
-                   class="btn btn-primary">
-
-                    Request a Free Quote
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
-
-
-                <a href="/services/"
-                   class="btn btn-outline">
-
-                    Explore Our Services
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-card">
-
-            <div class="hero-card-top">
-
-                <div class="hero-card-title">
-
-                    Global Language Workflow
-
-                </div>
-
-                <div class="live-badge">
-
-                    <span class="live-dot"></span>
-
-                    Multilingual
-
-                </div>
-
-            </div>
-
-
-            <div class="language-flow">
-
-                <div class="language-box">
-
-                    <small>Source</small>
-
-                    <strong>English</strong>
-
-                </div>
-
-
-                <div class="flow-icon">
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </div>
-
-
-                <div class="language-box">
-
-                    <small>Target</small>
-
-                    <strong>Spanish</strong>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-services">
-
-                <div class="hero-service">
-
-                    <i class="fa-solid fa-language"></i>
-                    Translation
-
-                </div>
-
-                <div class="hero-service">
-
-                    <i class="fa-solid fa-earth-americas"></i>
-                    Localization
-
-                </div>
-
-                <div class="hero-service">
-
-                    <i class="fa-solid fa-closed-captioning"></i>
-                    Subtitling
-
-                </div>
-
-                <div class="hero-service">
-
-                    <i class="fa-solid fa-check-double"></i>
-                    Linguistic QA
-
-                </div>
-
-            </div>
-
-        </div>
+      </div>
 
     </div>
+
+
+    <div class="hero-image">
+
+      <img
+        src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=85"
+        alt="International communication and language training">
+
+      <div class="floating-card">
+
+        <div class="floating-icon">
+          <i class="fa-solid fa-language"></i>
+        </div>
+
+        <div>
+          <strong>Multilingual Communication</strong>
+          <small>Translation • Localization • Language Services</small>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- =========================================
+<!-- =========================
      TRUST STRIP
-========================================= -->
+========================== -->
 
-<div class="trust-strip">
+<section class="trust-strip">
 
-    <div class="container trust-grid">
+  <div class="container trust-grid">
 
-        <div class="trust-item">
-
-            <i class="fa-solid fa-earth-americas"></i>
-
-            <span>Multilingual Coverage</span>
-
-        </div>
-
-        <div class="trust-item">
-
-            <i class="fa-solid fa-award"></i>
-
-            <span>Quality-Focused</span>
-
-        </div>
-
-        <div class="trust-item">
-
-            <i class="fa-solid fa-lock"></i>
-
-            <span>Confidential</span>
-
-        </div>
-
-        <div class="trust-item">
-
-            <i class="fa-solid fa-headset"></i>
-
-            <span>Responsive Support</span>
-
-        </div>
-
+    <div class="trust-item">
+      <i class="fa-solid fa-globe"></i>
+      Multilingual Coverage
     </div>
 
-</div>
+    <div class="trust-item">
+      <i class="fa-solid fa-circle-check"></i>
+      Quality-Focused
+    </div>
+
+    <div class="trust-item">
+      <i class="fa-solid fa-lock"></i>
+      Confidential Handling
+    </div>
+
+    <div class="trust-item">
+      <i class="fa-solid fa-headset"></i>
+      Responsive Support
+    </div>
+
+  </div>
+
+</section>
 
 
-<!-- =========================================
+<!-- =========================
      SERVICES
-========================================= -->
+========================== -->
 
-<section class="services" id="services">
+<section class="section section-light" id="services">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-head">
+    <div class="section-title">
 
-            <span class="section-label">
-                What We Do
-            </span>
+      <div class="eyebrow">
+        What We Do
+      </div>
 
-            <h2>
-                Language Services Built for Global Communication
-            </h2>
+      <h2>
+        Language Services Built Around Your Project
+      </h2>
 
-            <p>
-                From documents and digital content to audiovisual
-                material and multilingual products, our services are
-                designed to help your message travel accurately and
-                naturally.
-            </p>
-
-        </div>
-
-
-        <div class="services-grid">
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fa-solid fa-language"></i>
-                </div>
-
-                <h3>Translation</h3>
-
-                <p>
-                    Professional translation for business,
-                    technical, legal, healthcare, marketing,
-                    corporate and general content.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
-
-                <h3>Localization</h3>
-
-                <p>
-                    Adapt your content to the language, culture,
-                    terminology and expectations of your target
-                    market.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fa-solid fa-headset"></i>
-                </div>
-
-                <h3>Interpretation</h3>
-
-                <p>
-                    Language support for meetings, conversations,
-                    interviews, business communication and
-                    multilingual events.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fa-solid fa-closed-captioning"></i>
-                </div>
-
-                <h3>Subtitling</h3>
-
-                <p>
-                    Accurate subtitles and audiovisual language
-                    adaptation for videos, training content,
-                    entertainment and digital media.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fa-solid fa-microphone-lines"></i>
-                </div>
-
-                <h3>Transcription</h3>
-
-                <p>
-                    Clear and accurate transcription of interviews,
-                    meetings, recordings, research and
-                    multilingual audio content.
-                </p>
-
-            </div>
-
-
-            <div class="service-card">
-
-                <div class="service-icon">
-                    <i class="fa-solid fa-check-double"></i>
-                </div>
-
-                <h3>MTPE & Linguistic QA</h3>
-
-                <p>
-                    Human review, post-editing, terminology checks
-                    and linguistic quality assurance for
-                    machine-generated content.
-                </p>
-
-            </div>
-
-        </div>
+      <p>
+        From a single document to a multilingual rollout,
+        Abato Transglobal provides language support across
+        the full content lifecycle.
+      </p>
 
     </div>
+
+
+    <div class="services-grid">
+
+      <!-- Translation -->
+      <article class="service-card">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-language"></i>
+        </div>
+
+        <h3>Translation</h3>
+
+        <p>
+          Accurate translation adapted to your terminology,
+          audience, industry and communication objectives.
+        </p>
+
+        <a href="/services/" class="service-link">
+          Learn more →
+        </a>
+
+      </article>
+
+
+      <!-- Localization -->
+      <article class="service-card">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-earth-americas"></i>
+        </div>
+
+        <h3>Localization</h3>
+
+        <p>
+          Adapt websites, software, products, marketing and
+          digital content for specific markets and audiences.
+        </p>
+
+        <a href="/services/" class="service-link">
+          Learn more →
+        </a>
+
+      </article>
+
+
+      <!-- Interpretation -->
+      <article class="service-card">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-comments"></i>
+        </div>
+
+        <h3>Interpretation</h3>
+
+        <p>
+          Language support for meetings, interviews,
+          business communication and multilingual events.
+        </p>
+
+        <a href="/services/" class="service-link">
+          Learn more →
+        </a>
+
+      </article>
+
+
+      <!-- Subtitling -->
+      <article class="service-card">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-closed-captioning"></i>
+        </div>
+
+        <h3>Subtitling</h3>
+
+        <p>
+          Subtitles adapted for films, training, marketing,
+          social media and digital video content.
+        </p>
+
+        <a href="/services/" class="service-link">
+          Learn more →
+        </a>
+
+      </article>
+
+
+      <!-- Transcription -->
+      <article class="service-card">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-file-lines"></i>
+        </div>
+
+        <h3>Transcription</h3>
+
+        <p>
+          Clear transcription of interviews, meetings,
+          recordings, research and multimedia content.
+        </p>
+
+        <a href="/services/" class="service-link">
+          Learn more →
+        </a>
+
+      </article>
+
+
+      <!-- MTPE -->
+      <article class="service-card">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </div>
+
+        <h3>MTPE & Linguistic QA</h3>
+
+        <p>
+          Human post-editing and linguistic review to improve
+          machine-generated translations and language output.
+        </p>
+
+        <a href="/services/" class="service-link">
+          Learn more →
+        </a>
+
+      </article>
+
+
+      <!-- AI Language -->
+      <article class="service-card">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+
+        <h3>AI Language Services</h3>
+
+        <p>
+          Language data evaluation, AI output review,
+          annotation, linguistic evaluation and multilingual
+          AI language support.
+        </p>
+
+        <a href="/services/" class="service-link">
+          Learn more →
+        </a>
+
+      </article>
+
+
+      <!-- Project Management -->
+      <article class="service-card">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-diagram-project"></i>
+        </div>
+
+        <h3>Project Management</h3>
+
+        <p>
+          Coordinated multilingual workflows, schedules,
+          resources, communication and delivery across
+          language projects.
+        </p>
+
+        <a href="/services/" class="service-link">
+          Learn more →
+        </a>
+
+      </article>
+
+
+      <!-- LQA -->
+      <article class="service-card">
+
+        <div class="service-icon">
+          <i class="fa-solid fa-magnifying-glass-check"></i>
+        </div>
+
+        <h3>Linguistic Review</h3>
+
+        <p>
+          Structured linguistic checks for accuracy,
+          consistency, terminology, style and market suitability.
+        </p>
+
+        <a href="/services/" class="service-link">
+          Learn more →
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- =========================================
-     WHY ABATO
-========================================= -->
+<!-- =========================
+     ABOUT / WHY ABATO
+========================== -->
 
-<section class="why">
+<section class="section">
 
-    <div class="container why-grid">
+  <div class="container split">
 
-        <div class="why-content">
+    <div class="about-image">
 
-            <span class="section-label">
-                Why Abato Transglobal
-            </span>
-
-            <h2>
-                Language is more than words. It's your reputation.
-            </h2>
-
-            <p>
-                Every translated message represents your brand.
-                That's why our approach focuses on meaning,
-                context, terminology, consistency and the audience
-                receiving your message.
-            </p>
-
-
-            <div class="why-points">
-
-                <div class="why-point">
-
-                    <i class="fa-solid fa-bullseye"></i>
-
-                    <div>
-
-                        <strong>Meaning-First Translation</strong>
-
-                        <span>
-                            Preserve meaning, tone, intent and
-                            context rather than translating words
-                            mechanically.
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="why-point">
-
-                    <i class="fa-solid fa-check"></i>
-
-                    <div>
-
-                        <strong>Quality Control</strong>
-
-                        <span>
-                            Terminology, consistency and linguistic
-                            review are central to the workflow.
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="why-point">
-
-                    <i class="fa-solid fa-clock"></i>
-
-                    <div>
-
-                        <strong>Deadline-Conscious Delivery</strong>
-
-                        <span>
-                            Project requirements and delivery
-                            expectations are considered from the
-                            beginning.
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="why-point">
-
-                    <i class="fa-solid fa-shield-halved"></i>
-
-                    <div>
-
-                        <strong>Confidential Project Handling</strong>
-
-                        <span>
-                            Professional handling of client
-                            materials and project information.
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="why-panel">
-
-            <h3>
-                Built for Communication Without Borders
-            </h3>
-
-            <p>
-                Whether you are entering a new market, publishing
-                multilingual content, localizing a digital product
-                or communicating with international audiences,
-                Abato Transglobal provides language-focused
-                solutions designed around your project requirements.
-            </p>
-
-        </div>
+      <img
+        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1100&q=85"
+        alt="Professional team collaborating on a project">
 
     </div>
+
+
+    <div class="about-content">
+
+      <div class="eyebrow">
+        Why Abato Transglobal
+      </div>
+
+      <h2>
+        Language That Works for Your Audience
+      </h2>
+
+      <p>
+        Effective multilingual communication is more than replacing
+        words from one language with another. It requires context,
+        terminology, consistency and an understanding of the audience.
+      </p>
+
+      <div class="features">
+
+        <div class="feature">
+          <i class="fa-solid fa-check"></i>
+          <div>
+            <strong>Meaning-Focused</strong>
+            <span>Content is handled with context and intent in mind.</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <i class="fa-solid fa-check"></i>
+          <div>
+            <strong>Quality Control</strong>
+            <span>Review workflows help maintain consistency and accuracy.</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <i class="fa-solid fa-check"></i>
+          <div>
+            <strong>Market-Aware</strong>
+            <span>Localization considers regional audiences and usage.</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <i class="fa-solid fa-check"></i>
+          <div>
+            <strong>Project-Focused</strong>
+            <span>Clear communication from briefing through delivery.</span>
+          </div>
+        </div>
+
+      </div>
+
+      <br>
+
+      <a href="/about/" class="btn btn-secondary">
+        About Abato Transglobal
+      </a>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- =========================================
+<!-- =========================
      INDUSTRIES
-========================================= -->
+========================== -->
 
-<section class="industries">
+<section class="section section-light">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-head">
+    <div class="section-title">
 
-            <span class="section-label">
-                Industries
-            </span>
+      <div class="eyebrow">
+        Industries
+      </div>
 
-            <h2>
-                Language Solutions Across Industries
-            </h2>
+      <h2>
+        Supporting Different Types of Content
+      </h2>
 
-            <p>
-                Our multilingual workflow can support organizations
-                working across diverse commercial and professional
-                sectors.
-            </p>
-
-        </div>
-
-
-        <div class="industry-grid">
-
-            <div class="industry">
-
-                <i class="fa-solid fa-scale-balanced"></i>
-
-                <h3>Legal & Government</h3>
-
-                <p>
-                    Legal, administrative and government-related
-                    multilingual content.
-                </p>
-
-            </div>
-
-
-            <div class="industry">
-
-                <i class="fa-solid fa-heart-pulse"></i>
-
-                <h3>Healthcare</h3>
-
-                <p>
-                    Healthcare, medical and patient-facing
-                    communication.
-                </p>
-
-            </div>
-
-
-            <div class="industry">
-
-                <i class="fa-solid fa-chart-line"></i>
-
-                <h3>Finance & Business</h3>
-
-                <p>
-                    Financial, corporate and business communication.
-                </p>
-
-            </div>
-
-
-            <div class="industry">
-
-                <i class="fa-solid fa-laptop-code"></i>
-
-                <h3>Technology</h3>
-
-                <p>
-                    Software, digital products, UI and technology
-                    content.
-                </p>
-
-            </div>
-
-
-            <div class="industry">
-
-                <i class="fa-solid fa-cart-shopping"></i>
-
-                <h3>E-commerce</h3>
-
-                <p>
-                    Product descriptions, marketplaces and
-                    customer-facing content.
-                </p>
-
-            </div>
-
-
-            <div class="industry">
-
-                <i class="fa-solid fa-bullhorn"></i>
-
-                <h3>Marketing</h3>
-
-                <p>
-                    Campaigns, advertising and multilingual brand
-                    communication.
-                </p>
-
-            </div>
-
-
-            <div class="industry">
-
-                <i class="fa-solid fa-gamepad"></i>
-
-                <h3>Gaming & Entertainment</h3>
-
-                <p>
-                    Game localization, subtitles and entertainment
-                    content.
-                </p>
-
-            </div>
-
-
-            <div class="industry">
-
-                <i class="fa-solid fa-building"></i>
-
-                <h3>Corporate</h3>
-
-                <p>
-                    Internal communication, reports and corporate
-                    materials.
-                </p>
-
-            </div>
-
-        </div>
+      <p>
+        Language requirements vary by industry. Our workflows can
+        be adapted to terminology, tone and content requirements.
+      </p>
 
     </div>
+
+
+    <div class="industry-grid">
+
+      <div class="industry">
+        <i class="fa-solid fa-scale-balanced"></i>
+        Legal & Government
+      </div>
+
+      <div class="industry">
+        <i class="fa-solid fa-heart-pulse"></i>
+        Healthcare
+      </div>
+
+      <div class="industry">
+        <i class="fa-solid fa-coins"></i>
+        Finance & Business
+      </div>
+
+      <div class="industry">
+        <i class="fa-solid fa-laptop-code"></i>
+        Technology
+      </div>
+
+      <div class="industry">
+        <i class="fa-solid fa-cart-shopping"></i>
+        E-commerce
+      </div>
+
+      <div class="industry">
+        <i class="fa-solid fa-bullhorn"></i>
+        Marketing
+      </div>
+
+      <div class="industry">
+        <i class="fa-solid fa-gamepad"></i>
+        Gaming & Entertainment
+      </div>
+
+      <div class="industry">
+        <i class="fa-solid fa-building"></i>
+        Corporate
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
 
-<!-- =========================================
+<!-- =========================
      LANGUAGES
-========================================= -->
+========================== -->
 
-<section class="languages" id="languages">
+<section class="section">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-head">
+    <div class="language-box">
 
-            <span class="section-label">
-                Languages
-            </span>
+      <h2>
+        Languages Without Borders
+      </h2>
 
-            <h2>
-                From Major Markets to Hard-to-Find Languages
-            </h2>
+      <p>
+        Our multilingual language network supports major global
+        languages as well as regional and less commonly supported
+        language requirements.
+      </p>
 
-            <p>
-                Access multilingual language solutions across major
-                commercial markets, emerging regions and specialized
-                language communities — helping your business
-                communicate wherever your audience is.
-            </p>
+      <div class="language-tags">
 
-        </div>
+        <span>English</span>
+        <span>Spanish</span>
+        <span>French</span>
+        <span>German</span>
+        <span>Portuguese</span>
+        <span>Italian</span>
+        <span>Chinese</span>
+        <span>Japanese</span>
+        <span>Korean</span>
+        <span>Arabic</span>
+        <span>Russian</span>
+        <span>Dutch</span>
+        <span>Polish</span>
+        <span>Turkish</span>
+        <span>Hindi</span>
+        <span>Urdu</span>
+        <span>Vietnamese</span>
+        <span>Thai</span>
+        <span>Indonesian</span>
+        <span>Swahili</span>
+        <span>Yoruba</span>
+        <span>Igbo</span>
+        <span>Hausa</span>
+        <span>Welsh</span>
+        <span>Irish</span>
 
+      </div>
 
-        <div class="language-highlights">
+      <br>
 
-            <div class="language-highlight">
-
-                <i class="fa-solid fa-chart-line"></i>
-
-                <div>
-
-                    <strong>High-Demand Markets</strong>
-
-                    <span>
-                        Spanish • Chinese • French • German • Japanese
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="language-highlight">
-
-                <i class="fa-solid fa-earth-africa"></i>
-
-                <div>
-
-                    <strong>Emerging Markets</strong>
-
-                    <span>
-                        Hindi • Arabic • Vietnamese • Indonesian • Swahili
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="language-highlight">
-
-                <i class="fa-solid fa-language"></i>
-
-                <div>
-
-                    <strong>Specialized Coverage</strong>
-
-                    <span>
-                        Regional and less commonly supported languages
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="language-cloud">
-
-            <!-- Major Global Languages -->
-
-            <span class="language-tag">English</span>
-            <span class="language-tag">Spanish</span>
-            <span class="language-tag">French</span>
-            <span class="language-tag">German</span>
-            <span class="language-tag">Portuguese</span>
-            <span class="language-tag">Italian</span>
-            <span class="language-tag">Chinese (Simplified)</span>
-            <span class="language-tag">Chinese (Traditional)</span>
-            <span class="language-tag">Japanese</span>
-            <span class="language-tag">Korean</span>
-            <span class="language-tag">Arabic</span>
-            <span class="language-tag">Russian</span>
-            <span class="language-tag">Dutch</span>
-            <span class="language-tag">Polish</span>
-            <span class="language-tag">Turkish</span>
-            <span class="language-tag">Ukrainian</span>
-
-            <!-- European Languages -->
-
-            <span class="language-tag">Romanian</span>
-            <span class="language-tag">Czech</span>
-            <span class="language-tag">Slovak</span>
-            <span class="language-tag">Hungarian</span>
-            <span class="language-tag">Bulgarian</span>
-            <span class="language-tag">Croatian</span>
-            <span class="language-tag">Serbian</span>
-            <span class="language-tag">Slovenian</span>
-            <span class="language-tag">Bosnian</span>
-            <span class="language-tag">Albanian</span>
-            <span class="language-tag">Macedonian</span>
-            <span class="language-tag">Greek</span>
-            <span class="language-tag">Lithuanian</span>
-            <span class="language-tag">Latvian</span>
-            <span class="language-tag">Estonian</span>
-            <span class="language-tag">Finnish</span>
-            <span class="language-tag">Swedish</span>
-            <span class="language-tag">Norwegian</span>
-            <span class="language-tag">Danish</span>
-            <span class="language-tag">Icelandic</span>
-            <span class="language-tag">Maltese</span>
-            <span class="language-tag">Catalan</span>
-            <span class="language-tag">Basque</span>
-            <span class="language-tag">Galician</span>
-
-            <!-- Middle East & Central Asia -->
-
-            <span class="language-tag">Persian (Farsi)</span>
-            <span class="language-tag">Hebrew</span>
-            <span class="language-tag">Kurdish</span>
-            <span class="language-tag">Pashto</span>
-            <span class="language-tag">Dari</span>
-            <span class="language-tag">Urdu</span>
-            <span class="language-tag">Kazakh</span>
-            <span class="language-tag">Uzbek</span>
-            <span class="language-tag">Azerbaijani</span>
-            <span class="language-tag">Georgian</span>
-            <span class="language-tag">Armenian</span>
-
-            <!-- South Asian Languages -->
-
-            <span class="language-tag">Hindi</span>
-            <span class="language-tag">Bengali</span>
-            <span class="language-tag">Tamil</span>
-            <span class="language-tag">Telugu</span>
-            <span class="language-tag">Marathi</span>
-            <span class="language-tag">Gujarati</span>
-            <span class="language-tag">Punjabi</span>
-            <span class="language-tag">Malayalam</span>
-            <span class="language-tag">Kannada</span>
-            <span class="language-tag">Nepali</span>
-            <span class="language-tag">Sinhala</span>
-
-            <!-- Southeast & East Asian Languages -->
-
-            <span class="language-tag">Vietnamese</span>
-            <span class="language-tag">Thai</span>
-            <span class="language-tag">Indonesian</span>
-            <span class="language-tag">Malay</span>
-            <span class="language-tag">Filipino</span>
-            <span class="language-tag">Khmer</span>
-            <span class="language-tag">Lao</span>
-            <span class="language-tag">Burmese</span>
-            <span class="language-tag">Mongolian</span>
-
-            <!-- African Languages -->
-
-            <span class="language-tag">Swahili</span>
-            <span class="language-tag">Amharic</span>
-            <span class="language-tag">Hausa</span>
-            <span class="language-tag">Yoruba</span>
-            <span class="language-tag">Igbo</span>
-            <span class="language-tag">Zulu</span>
-            <span class="language-tag">Xhosa</span>
-            <span class="language-tag">Somali</span>
-            <span class="language-tag">Afrikaans</span>
-
-            <!-- Additional / Specialized Languages -->
-
-            <span class="language-tag">Haitian Creole</span>
-            <span class="language-tag">Luxembourgish</span>
-            <span class="language-tag">Welsh</span>
-            <span class="language-tag">Irish</span>
-            <span class="language-tag">Scottish Gaelic</span>
-            <span class="language-tag">Faroese</span>
-            <span class="language-tag">Esperanto</span>
-
-        </div>
-
-
-        <p class="language-note">
-
-            Our language network covers widely requested commercial
-            languages as well as regional, emerging and less commonly
-            supported languages. Contact us with your language pair
-            and project requirements.
-
-        </p>
+      <a href="/languages/" class="btn btn-primary">
+        Explore Language Coverage
+      </a>
 
     </div>
+
+  </div>
 
 </section>
 
 
-<!-- =========================================
+<!-- =========================
      PROCESS
-========================================= -->
+========================== -->
 
-<section class="process">
+<section class="section section-light">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="section-head">
+    <div class="section-title">
 
-            <span class="section-label">
-                How It Works
-            </span>
+      <div class="eyebrow">
+        Our Process
+      </div>
 
-            <h2>
-                A Simple Path From Request to Delivery
-            </h2>
+      <h2>
+        Simple From Brief to Delivery
+      </h2>
 
-            <p>
-                Tell us what you need, and we'll help define the
-                appropriate language service and workflow for your
-                project.
-            </p>
-
-        </div>
-
-
-        <div class="process-grid">
-
-            <div class="process-card">
-
-                <div class="process-number">01</div>
-
-                <h3>
-                    Tell Us What You Need
-                </h3>
-
-                <p>
-                    Share your language pair, service, content type,
-                    volume and deadline.
-                </p>
-
-            </div>
-
-
-            <div class="process-card">
-
-                <div class="process-number">02</div>
-
-                <h3>
-                    Receive Your Quote
-                </h3>
-
-                <p>
-                    We review your requirements and provide project
-                    information and pricing.
-                </p>
-
-            </div>
-
-
-            <div class="process-card">
-
-                <div class="process-number">03</div>
-
-                <h3>
-                    Production & Review
-                </h3>
-
-                <p>
-                    Your content moves through the agreed
-                    translation and quality workflow.
-                </p>
-
-            </div>
-
-
-            <div class="process-card">
-
-                <div class="process-number">04</div>
-
-                <h3>
-                    Delivery
-                </h3>
-
-                <p>
-                    Receive the completed project according to the
-                    agreed specifications.
-                </p>
-
-            </div>
-
-        </div>
+      <p>
+        A straightforward workflow keeps your project organized
+        and your requirements clear.
+      </p>
 
     </div>
 
-</section>
 
-
-<!-- =========================================
-     CREDENTIALS / TRUST
-========================================= -->
-
-<section class="credentials">
-
-    <div class="container">
-
-        <div class="section-head">
-
-            <span class="section-label">
-                Quality & Trust
-            </span>
-
-            <h2>
-                A Professional Language Workflow
-            </h2>
-
-            <p>
-                We focus on clear communication, linguistic quality,
-                terminology consistency, confidentiality and
-                project-specific requirements.
-            </p>
-
-        </div>
-
-
-        <div class="credentials-grid">
-
-            <div class="credential-card">
-
-                <i class="fa-solid fa-award"></i>
-
-                <h3>
-                    Professional Quality Standards
-                </h3>
-
-                <p>
-                    Projects are approached with attention to
-                    accuracy, terminology, context and consistency.
-                </p>
-
-            </div>
-
-
-            <div class="credential-card">
-
-                <i class="fa-solid fa-users"></i>
-
-                <h3>
-                    Qualified Linguistic Resources
-                </h3>
-
-                <p>
-                    Language requirements can be matched with
-                    appropriate linguistic resources according to
-                    the project.
-                </p>
-
-            </div>
-
-
-            <div class="credential-card">
-
-                <i class="fa-solid fa-lock"></i>
-
-                <h3>
-                    Confidentiality
-                </h3>
-
-                <p>
-                    Client materials and project information are
-                    handled professionally and with discretion.
-                </p>
-
-            </div>
-
-
-            <div class="credential-card">
-
-                <i class="fa-solid fa-globe"></i>
-
-                <h3>
-                    Global Communication
-                </h3>
-
-                <p>
-                    Support for businesses and organizations
-                    communicating with multilingual audiences.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
-     CLIENT EXPERIENCE
-========================================= -->
-
-<section class="experience">
-
-    <div class="container">
-
-        <div class="section-head">
-
-            <span class="section-label">
-                Client Experience
-            </span>
-
-            <h2>
-                What We Aim to Deliver on Every Project
-            </h2>
-
-            <p>
-                Our service philosophy is centered around the
-                experience clients should expect throughout the
-                project lifecycle.
-            </p>
-
-        </div>
-
-
-        <div class="experience-grid">
-
-            <div class="experience-card">
-
-                <div class="quote-mark">
-                    <i class="fa-solid fa-quote-left"></i>
-                </div>
-
-                <p>
-                    Clear communication from project briefing through
-                    delivery, with requirements understood before
-                    production begins.
-                </p>
-
-                <strong>
-                    Clear Project Communication
-                </strong>
-
-            </div>
-
-
-            <div class="experience-card">
-
-                <div class="quote-mark">
-                    <i class="fa-solid fa-quote-left"></i>
-                </div>
-
-                <p>
-                    Language work that considers context, audience,
-                    terminology and the purpose behind the original
-                    content.
-                </p>
-
-                <strong>
-                    Meaning-Focused Language
-                </strong>
-
-            </div>
-
-
-            <div class="experience-card">
-
-                <div class="quote-mark">
-                    <i class="fa-solid fa-quote-left"></i>
-                </div>
-
-                <p>
-                    A professional workflow designed around quality,
-                    consistency, confidentiality and agreed delivery
-                    requirements.
-                </p>
-
-                <strong>
-                    Quality-Focused Delivery
-                </strong>
-
-            </div>
-
-        </div>
-
-
-        <p class="experience-note">
-
-            The statements above describe our service approach and
-            are not presented as attributed third-party testimonials.
-
+    <div class="process-grid">
+
+      <div class="process">
+        <div class="process-number">01 — BRIEF</div>
+        <h3>Tell Us What You Need</h3>
+        <p>
+          Share your languages, content, service requirements
+          and desired timeline.
         </p>
+      </div>
+
+      <div class="process">
+        <div class="process-number">02 — QUOTE</div>
+        <h3>Receive Your Quote</h3>
+        <p>
+          We review the requirements and provide the relevant
+          project information and pricing.
+        </p>
+      </div>
+
+      <div class="process">
+        <div class="process-number">03 — PRODUCTION</div>
+        <h3>Production & Review</h3>
+        <p>
+          The project moves through the appropriate language,
+          review and quality workflow.
+        </p>
+      </div>
+
+      <div class="process">
+        <div class="process-number">04 — DELIVERY</div>
+        <h3>Delivery</h3>
+        <p>
+          Final content is delivered according to the agreed
+          requirements and format.
+        </p>
+      </div>
 
     </div>
+
+  </div>
 
 </section>
 
 
-<!-- =========================================
-     FAQ
-========================================= -->
-
-<section class="faq">
-
-    <div class="container">
-
-        <div class="section-head">
-
-            <span class="section-label">
-                FAQ
-            </span>
-
-            <h2>
-                Frequently Asked Questions
-            </h2>
-
-            <p>
-                Find quick answers to common questions about our
-                language services and project process.
-            </p>
-
-        </div>
-
-
-        <div class="faq-list">
-
-            <div class="faq-item">
-
-                <button class="faq-question">
-
-                    What types of translation projects do you handle?
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    We support a broad range of translation and
-                    localization requirements, including business,
-                    corporate, marketing, technology, e-commerce,
-                    healthcare, legal, audiovisual and general
-                    content.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question">
-
-                    Can you handle urgent projects?
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Urgent projects can be reviewed based on language
-                    pair, word count, content type, complexity and
-                    deadline. Contact us with the project details so
-                    availability can be assessed.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question">
-
-                    Do you provide localization?
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Yes. Localization focuses on adapting content to
-                    the target market, including language, cultural
-                    context, terminology, tone and user expectations.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question">
-
-                    How can I request a quote?
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Complete the quote form below with your language
-                    pair, service, deadline and project details.
-                    You can also contact us directly by email.
-
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question">
-
-                    Can you work with specialized terminology?
-
-                    <i class="fa-solid fa-chevron-down"></i>
-
-                </button>
-
-                <div class="faq-answer">
-
-                    Yes. Project terminology, glossaries, reference
-                    materials, style guides and client instructions
-                    can be incorporated into the workflow where
-                    provided.
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================================
+<!-- =========================
      CTA
-========================================= -->
+========================== -->
 
 <section class="cta">
 
-    <div class="container cta-inner">
+  <div class="container">
+
+    <div class="cta-box">
+
+      <div>
 
         <h2>
-            Ready to Take Your Content Global?
+          Ready to Go Global?
         </h2>
 
         <p>
-            Tell us about your language project, target market and
-            deadline. We'll help you identify the right language
-            service for your requirements.
+          Tell us what you need and let us help you build
+          a clear multilingual workflow for your project.
         </p>
 
-        <a href="#quote"
-           class="btn">
+      </div>
 
-            Start Your Project
-
-            <i class="fa-solid fa-arrow-right"></i>
-
-        </a>
+      <a href="#quote" class="btn btn-primary">
+        Start Your Project
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
 
     </div>
+
+  </div>
 
 </section>
 
 
-<!-- =========================================
+<!-- =========================
      QUOTE FORM
-========================================= -->
+========================== -->
 
-<section class="quote" id="quote">
+<section class="section quote-section" id="quote">
 
-    <div class="container quote-grid">
+  <div class="container quote-layout">
 
-        <div class="quote-info">
+    <div class="quote-info">
 
-            <span class="section-label">
-                Request a Quote
-            </span>
+      <div class="eyebrow">
+        Request a Quote
+      </div>
 
-            <h2>
-                Tell Us About Your Project
-            </h2>
+      <h2>
+        Tell Us About Your Project
+      </h2>
 
-            <p>
-                Share a few details about your project and we'll
-                have the information needed to review your request.
-            </p>
-
-
-            <div class="quote-contact">
-
-                <div>
-
-                    <i class="fa-solid fa-envelope"></i>
-
-                    abatotransglobal@email.com
-
-                </div>
+      <p>
+        Complete the short form and send your project
+        requirements directly to our team.
+      </p>
 
 
-                <div>
+      <div class="contact-mini">
 
-                    <i class="fa-solid fa-globe"></i>
+        <i class="fa-solid fa-envelope"></i>
 
-                    Global Language Services
+        <div>
+          <strong>Email</strong>
+          <span>info@abatotransglobal.com</span>
+        </div>
 
-                </div>
+      </div>
 
 
-                <div>
+      <div class="contact-mini">
 
-                    <i class="fa-solid fa-clock"></i>
+        <i class="fa-solid fa-globe"></i>
 
-                    Project-Based & Flexible Support
+        <div>
+          <strong>Website</strong>
+          <span>abatotransglobal.com</span>
+        </div>
 
-                </div>
+      </div>
 
-            </div>
+
+      <div class="contact-mini">
+
+        <i class="fa-solid fa-language"></i>
+
+        <div>
+          <strong>Services</strong>
+          <span>Translation • Localization • Language Solutions</span>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!--
+      FORM SUBMISSION
+
+      This uses FormSubmit to forward the form to:
+      info@abatotransglobal.com
+
+      The first submission may require email confirmation
+      from FormSubmit.
+    -->
+
+    <form
+      class="quote-form"
+      action="https://formsubmit.co/info@abatotransglobal.com"
+      method="POST">
+
+      <!-- FormSubmit Settings -->
+
+      <input type="hidden"
+             name="_subject"
+             value="New Project Inquiry — Abato Transglobal">
+
+      <input type="hidden"
+             name="_template"
+             value="table">
+
+      <input type="hidden"
+             name="_captcha"
+             value="true">
+
+      <input type="hidden"
+             name="_next"
+             value="https://abatotransglobal.com/">
+
+      <div class="form-grid">
+
+
+        <div class="form-group">
+
+          <label for="name">
+            Full Name *
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            name="Full Name"
+            placeholder="Your full name"
+            required>
 
         </div>
 
 
-        <form class="quote-form"
-              id="quoteForm">
+        <div class="form-group">
 
-            <div class="form-grid">
+          <label for="company">
+            Company / Organization
+          </label>
 
-                <div class="form-group">
+          <input
+            type="text"
+            id="company"
+            name="Company / Organization"
+            placeholder="Company name">
 
-                    <label for="name">
-                        Full Name
-                    </label>
-
-                    <input type="text"
-                           id="name"
-                           name="name"
-                           placeholder="Your full name"
-                           required>
-
-                </div>
+        </div>
 
 
-                <div class="form-group">
+        <div class="form-group">
 
-                    <label for="company">
-                        Company / Organization
-                    </label>
+          <label for="email">
+            Email Address *
+          </label>
 
-                    <input type="text"
-                           id="company"
-                           name="company"
-                           placeholder="Company name">
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            placeholder="you@example.com"
+            required>
 
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="email">
-                        Email Address
-                    </label>
-
-                    <input type="email"
-                           id="email"
-                           name="email"
-                           placeholder="you@company.com"
-                           required>
-
-                </div>
+        </div>
 
 
-                <div class="form-group">
+        <div class="form-group">
 
-                    <label for="phone">
-                        Phone / WhatsApp
-                    </label>
+          <label for="phone">
+            Phone / WhatsApp
+          </label>
 
-                    <input type="text"
-                           id="phone"
-                           name="phone"
-                           placeholder="+1 / +44 / +234...">
+          <input
+            type="text"
+            id="phone"
+            name="Phone / WhatsApp"
+            placeholder="+234...">
 
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="service">
-                        Service
-                    </label>
-
-                    <select id="service"
-                            name="service">
-
-                        <option value="">
-                            Select a service
-                        </option>
-
-                        <option>
-                            Translation
-                        </option>
-
-                        <option>
-                            Localization
-                        </option>
-
-                        <option>
-                            Interpretation
-                        </option>
-
-                        <option>
-                            Transcription
-                        </option>
-
-                        <option>
-                            Subtitling
-                        </option>
-
-                        <option>
-                            MTPE & Linguistic QA
-                        </option>
-
-                        <option>
-                            Other Language Service
-                        </option>
-
-                    </select>
-
-                </div>
+        </div>
 
 
-                <div class="form-group">
+        <div class="form-group">
 
-                    <label for="deadline">
-                        Desired Deadline
-                    </label>
+          <label for="service">
+            Service *
+          </label>
 
-                    <input type="text"
-                           id="deadline"
-                           name="deadline"
-                           placeholder="e.g. 5 October 2026">
+          <select id="service" name="Service" required>
 
-                </div>
+            <option value="">
+              Select a service
+            </option>
 
+            <option>Translation</option>
+            <option>Localization</option>
+            <option>Interpretation</option>
+            <option>Transcription</option>
+            <option>Subtitling</option>
+            <option>MTPE</option>
+            <option>Linguistic QA / LQA</option>
+            <option>AI Language Services</option>
+            <option>Project Management</option>
+            <option>Other</option>
 
-                <div class="form-group">
+          </select>
 
-                    <label for="source">
-                        Source Language
-                    </label>
-
-                    <input type="text"
-                           id="source"
-                           name="source"
-                           placeholder="e.g. English">
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label for="target">
-                        Target Language
-                    </label>
-
-                    <input type="text"
-                           id="target"
-                           name="target"
-                           placeholder="e.g. Spanish">
-
-                </div>
+        </div>
 
 
-                <div class="form-group full">
+        <div class="form-group">
 
-                    <label for="details">
-                        Project Details
-                    </label>
+          <label for="deadline">
+            Desired Deadline
+          </label>
 
-                    <textarea id="details"
-                              name="details"
-                              placeholder="Tell us about the project, word count, file format, deadline, subject matter and any other relevant requirements."></textarea>
+          <input
+            type="text"
+            id="deadline"
+            name="Desired Deadline"
+            placeholder="e.g. 30 September 2026">
 
-                </div>
-
-            </div>
+        </div>
 
 
-            <button type="submit"
-                    class="btn btn-primary form-submit">
+        <div class="form-group">
 
-                Request My Quote
+          <label for="source">
+            Source Language
+          </label>
 
-                <i class="fa-solid fa-paper-plane"></i>
+          <input
+            type="text"
+            id="source"
+            name="Source Language"
+            placeholder="e.g. English">
 
-            </button>
+        </div>
 
-        </form>
 
-    </div>
+        <div class="form-group">
+
+          <label for="target">
+            Target Language
+          </label>
+
+          <input
+            type="text"
+            id="target"
+            name="Target Language"
+            placeholder="e.g. Spanish">
+
+        </div>
+
+
+        <div class="form-group full">
+
+          <label for="details">
+            Project Details *
+          </label>
+
+          <textarea
+            id="details"
+            name="Project Details"
+            placeholder="Tell us about your project, word count, file type, language pair, deadline and any other requirements."
+            required></textarea>
+
+        </div>
+
+
+        <div class="form-group full">
+
+          <button type="submit" class="btn btn-primary">
+            Send Project Request
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+
+          <div class="form-note">
+            Your project information will be sent to
+            info@abatotransglobal.com.
+          </div>
+
+        </div>
+
+      </div>
+
+    </form>
+
+  </div>
 
 </section>
 
 
-<!-- =========================================
+<!-- =========================
      FOOTER
-========================================= -->
+========================== -->
 
 <footer>
 
-    <div class="container">
+  <div class="container footer-grid">
 
-        <div class="footer-grid">
+    <div class="footer-brand">
 
-            <div class="footer-brand">
+      <a href="/" class="logo" style="color:#fff;">
 
-                <a href="/"
-                   class="brand">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 
-                    <div class="logo-mark premium-logo">
+          <defs>
+            <linearGradient id="footerGradient"
+                            x1="0%"
+                            y1="0%"
+                            x2="100%"
+                            y2="100%">
+              <stop offset="0%" stop-color="#19C3B1"/>
+              <stop offset="100%" stop-color="#123B68"/>
+            </linearGradient>
+          </defs>
 
-                        <svg viewBox="0 0 100 100"
-                             aria-hidden="true">
+          <circle cx="50"
+                  cy="50"
+                  r="46"
+                  fill="url(#footerGradient)"/>
 
-                            <defs>
+          <path d="M25 72 L50 23 L75 72 L64 72 L57 58 L43 58 L36 72 Z"
+                fill="#fff"/>
 
-                                <linearGradient id="footerLogoGradient"
-                                                x1="0%"
-                                                y1="0%"
-                                                x2="100%"
-                                                y2="100%">
+          <circle cx="50"
+                  cy="49"
+                  r="6"
+                  fill="#19C3B1"/>
 
-                                    <stop offset="0%"
-                                          stop-color="#19C3B1"/>
+        </svg>
 
-                                    <stop offset="100%"
-                                          stop-color="#123B68"/>
+        ABATO TRANSGLOBAL
 
-                                </linearGradient>
+      </a>
 
-                            </defs>
-
-                            <circle cx="50"
-                                    cy="50"
-                                    r="38"
-                                    fill="none"
-                                    stroke="url(#footerLogoGradient)"
-                                    stroke-width="5"
-                                    stroke-linecap="round"
-                                    stroke-dasharray="145 45"/>
-
-                            <path d="M30 68 L50 28 L70 68"
-                                  fill="none"
-                                  stroke="#ffffff"
-                                  stroke-width="7"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"/>
-
-                            <path d="M39 53 H61"
-                                  stroke="#19C3B1"
-                                  stroke-width="6"
-                                  stroke-linecap="round"/>
-
-                            <circle cx="72"
-                                    cy="28"
-                                    r="5"
-                                    fill="#19C3B1"/>
-
-                        </svg>
-
-                    </div>
-
-
-                    <div class="brand-text">
-
-                        <strong>
-                            ABATO TRANSGLOBAL
-                        </strong>
-
-                        <span>
-                            Language • Localization • Global Reach
-                        </span>
-
-                    </div>
-
-                </a>
-
-
-                <p class="footer-description">
-
-                    Professional multilingual language solutions
-                    designed to help businesses, organizations and
-                    global audiences communicate across borders.
-
-                </p>
-
-
-                <div class="socials">
-
-                    <!-- Replace # with real company social URLs -->
-
-                    <a href="#"
-                       aria-label="LinkedIn">
-
-                        <i class="fa-brands fa-linkedin-in"></i>
-
-                    </a>
-
-
-                    <a href="#"
-                       aria-label="Facebook">
-
-                        <i class="fa-brands fa-facebook-f"></i>
-
-                    </a>
-
-
-                    <a href="#"
-                       aria-label="Instagram">
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="footer-col">
-
-                <h3>
-                    Company
-                </h3>
-
-                <a href="/about/">
-                    About Us
-                </a>
-
-                <a href="/services/">
-                    Services
-                </a>
-
-                <a href="/industries/">
-                    Industries
-                </a>
-
-                <a href="/languages/">
-                    Languages
-                </a>
-
-                <a href="/contact/">
-                    Contact
-                </a>
-
-            </div>
-
-
-            <div class="footer-col">
-
-                <h3>
-                    Services
-                </h3>
-
-                <a href="/services/">
-                    Translation
-                </a>
-
-                <a href="/services/">
-                    Localization
-                </a>
-
-                <a href="/services/">
-                    Interpretation
-                </a>
-
-                <a href="/services/">
-                    Transcription
-                </a>
-
-                <a href="/services/">
-                    Subtitling
-                </a>
-
-                <a href="/services/">
-                    MTPE & Linguistic QA
-                </a>
-
-            </div>
-
-
-            <div class="footer-col">
-
-                <h3>
-                    Start a Project
-                </h3>
-
-                <a href="#quote">
-                    Request a Quote
-                </a>
-
-                <a href="#quote">
-                    Tell Us Your Requirements
-                </a>
-
-                <a href="mailto:abatotransglobal@email.com">
-                    Email Us
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <span>
-                © <span id="year"></span>
-                Abato Transglobal. All rights reserved.
-            </span>
-
-            <span>
-                Professional Multilingual Language Services
-            </span>
-
-        </div>
+      <p>
+        Professional translation, localization and multilingual
+        language solutions for global communication.
+      </p>
 
     </div>
+
+
+    <div>
+
+      <div class="footer-title">
+        Company
+      </div>
+
+      <ul class="footer-links">
+
+        <li>
+          <a href="/about/">About</a>
+        </li>
+
+        <li>
+          <a href="/services/">Services</a>
+        </li>
+
+        <li>
+          <a href="/industries/">Industries</a>
+        </li>
+
+        <li>
+          <a href="/languages/">Languages</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div>
+
+      <div class="footer-title">
+        Services
+      </div>
+
+      <ul class="footer-links">
+
+        <li>
+          <a href="/services/">Translation</a>
+        </li>
+
+        <li>
+          <a href="/services/">Localization</a>
+        </li>
+
+        <li>
+          <a href="/services/">Subtitling</a>
+        </li>
+
+        <li>
+          <a href="/services/">Project Management</a>
+        </li>
+
+        <li>
+          <a href="/services/">AI Language Services</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <div>
+
+      <div class="footer-title">
+        Contact
+      </div>
+
+      <ul class="footer-links">
+
+        <li>
+          <a href="mailto:info@abatotransglobal.com">
+            info@abatotransglobal.com
+          </a>
+        </li>
+
+        <li>
+          <a href="#quote">
+            Request a Quote
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © <span id="year"></span> Abato Transglobal. All rights reserved.
+    </span>
+
+    <span>
+      Professional Multilingual Language Solutions
+    </span>
+
+  </div>
 
 </footer>
 
 
-<!-- =========================================
-     FLOATING QUOTE BUTTON
-========================================= -->
+<!-- =========================
+     AI ASSISTANT
+========================== -->
 
-<a href="#quote"
-   class="floating-quote">
+<button
+  class="ai-button"
+  id="aiButton"
+  aria-label="Open Abato AI Assistant">
 
-    <i class="fa-solid fa-comment-dots"></i>
+  <i class="fa-solid fa-robot"></i>
 
-    Get a Quote
-
-</a>
+</button>
 
 
-<!-- =========================================
+<div class="ai-chat" id="aiChat">
+
+  <div class="ai-header">
+
+    <div class="ai-header-icon">
+      <i class="fa-solid fa-robot"></i>
+    </div>
+
+    <div>
+      <strong>Abato AI Assistant</strong>
+      <small>Language services assistant</small>
+    </div>
+
+  </div>
+
+
+  <div class="ai-messages" id="aiMessages">
+
+    <div class="ai-message bot">
+
+      Hello! 👋 I'm the Abato Transglobal assistant.
+      I can help you find the right service or guide you
+      toward requesting a quote.
+
+    </div>
+
+  </div>
+
+
+  <div class="ai-options">
+
+    <button class="ai-option" data-question="services">
+      Our services
+    </button>
+
+    <button class="ai-option" data-question="translation">
+      Translation
+    </button>
+
+    <button class="ai-option" data-question="languages">
+      Languages
+    </button>
+
+    <button class="ai-option" data-question="quote">
+      Request a quote
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- =========================
      JAVASCRIPT
-========================================= -->
+========================== -->
 
 <script>
 
-    /* =========================================
-       MOBILE NAVIGATION
-    ========================================= */
+  /* =========================
+     MOBILE NAVIGATION
+  ========================== */
 
-    const menuBtn = document.getElementById("menuBtn");
-    const navLinks = document.getElementById("navLinks");
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
 
-    menuBtn.addEventListener("click", function () {
+  menuToggle.addEventListener("click", () => {
 
-        navLinks.classList.toggle("active");
+    navLinks.classList.toggle("active");
 
-        const icon = menuBtn.querySelector("i");
+  });
 
-        if (navLinks.classList.contains("active")) {
 
-            icon.classList.remove("fa-bars");
+  document.querySelectorAll(".nav-links a").forEach(link => {
 
-            icon.classList.add("fa-xmark");
+    link.addEventListener("click", () => {
 
-        } else {
-
-            icon.classList.remove("fa-xmark");
-
-            icon.classList.add("fa-bars");
-
-        }
+      navLinks.classList.remove("active");
 
     });
 
-
-    /* Close mobile menu after clicking */
-
-    document.querySelectorAll(".nav-links a").forEach(function(link) {
-
-        link.addEventListener("click", function() {
-
-            navLinks.classList.remove("active");
-
-            const icon = menuBtn.querySelector("i");
-
-            icon.classList.remove("fa-xmark");
-
-            icon.classList.add("fa-bars");
-
-        });
-
-    });
+  });
 
 
-    /* =========================================
-       FAQ ACCORDION
-    ========================================= */
+  /* =========================
+     CURRENT YEAR
+  ========================== */
 
-    document.querySelectorAll(".faq-question").forEach(function(button) {
-
-        button.addEventListener("click", function() {
-
-            const item = button.parentElement;
-
-            document.querySelectorAll(".faq-item").forEach(function(otherItem) {
-
-                if (otherItem !== item) {
-
-                    otherItem.classList.remove("active");
-
-                }
-
-            });
-
-            item.classList.toggle("active");
-
-        });
-
-    });
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
 
 
-    /* =========================================
-       CURRENT YEAR
-    ========================================= */
+  /* =========================
+     AI ASSISTANT
+  ========================== */
 
-    document.getElementById("year").textContent =
-        new Date().getFullYear();
-
-
-    /* =========================================
-       QUOTE FORM
-    ========================================= */
-
-    const quoteForm =
-        document.getElementById("quoteForm");
+  const aiButton = document.getElementById("aiButton");
+  const aiChat = document.getElementById("aiChat");
+  const aiMessages = document.getElementById("aiMessages");
+  const aiOptions = document.querySelectorAll(".ai-option");
 
 
-    quoteForm.addEventListener("submit", function(event) {
+  aiButton.addEventListener("click", () => {
 
-        event.preventDefault();
+    aiChat.classList.toggle("active");
 
-        const formData =
-            new FormData(quoteForm);
-
-
-        const name =
-            formData.get("name") || "";
-
-        const company =
-            formData.get("company") || "";
-
-        const email =
-            formData.get("email") || "";
-
-        const phone =
-            formData.get("phone") || "";
-
-        const service =
-            formData.get("service") || "";
-
-        const source =
-            formData.get("source") || "";
-
-        const target =
-            formData.get("target") || "";
-
-        const deadline =
-            formData.get("deadline") || "";
-
-        const details =
-            formData.get("details") || "";
+  });
 
 
-        const subject =
-            encodeURIComponent(
-                "New Quote Request - Abato Transglobal"
-            );
+  function addMessage(text, type) {
+
+    const message = document.createElement("div");
+
+    message.className = "ai-message " + type;
+
+    message.textContent = text;
+
+    aiMessages.appendChild(message);
+
+    aiMessages.scrollTop = aiMessages.scrollHeight;
+
+  }
 
 
-        const body =
-            encodeURIComponent(
+  const responses = {
 
-                "NEW PROJECT / QUOTE REQUEST\n\n" +
+    services:
+      "We provide translation, localization, interpretation, transcription, subtitling, MTPE, linguistic QA, AI language services and multilingual project management.",
 
-                "Full Name: " + name + "\n" +
+    translation:
+      "Our translation service covers business, technology, healthcare, legal, marketing, e-commerce and other professional content. You can request a quote using the form below.",
 
-                "Company / Organization: " +
-                company + "\n" +
+    languages:
+      "Our language network covers major global languages such as English, Spanish, French, German, Portuguese, Chinese, Japanese, Korean and Arabic, as well as regional and less commonly supported languages.",
 
-                "Email: " + email + "\n" +
+    quote:
+      "You can request a free quote by completing the project form on this page. Include your language pair, service, deadline and project details so our team can review your request."
 
-                "Phone / WhatsApp: " +
-                phone + "\n\n" +
-
-                "Service: " +
-                service + "\n" +
-
-                "Source Language: " +
-                source + "\n" +
-
-                "Target Language: " +
-                target + "\n" +
-
-                "Desired Deadline: " +
-                deadline + "\n\n" +
-
-                "Project Details:\n" +
-                details
-
-            );
+  };
 
 
-        window.location.href =
-            "mailto:abatotransglobal@email.com" +
-            "?subject=" +
-            subject +
-            "&body=" +
-            body;
+  aiOptions.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+      const question = button.dataset.question;
+
+      addMessage(button.textContent, "user");
+
+      setTimeout(() => {
+
+        addMessage(responses[question], "bot");
+
+      }, 350);
 
     });
+
+  });
+
+
+  /* =========================
+     CLOSE AI WHEN CLICKING
+     OUTSIDE THE CHAT
+  ========================== */
+
+  document.addEventListener("click", event => {
+
+    if (
+      aiChat.classList.contains("active") &&
+      !aiChat.contains(event.target) &&
+      !aiButton.contains(event.target)
+    ) {
+
+      aiChat.classList.remove("active");
+
+    }
+
+  });
 
 </script>
 
