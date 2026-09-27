@@ -1162,30 +1162,101 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container nav-wrap">
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
-      <a href="/" class="site-logo" aria-label="Abato Transglobal home">
-        <!-- Inline ATG globe logo. Reuse this SVG unchanged on all pages. -->
-        <svg class="logo-symbol" viewBox="0 0 100 100" role="img" aria-label="ATG globe logo" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="atgGradient" x1="8%" y1="5%" x2="92%" y2="95%">
-              <stop offset="0%" stop-color="#19C3B1"/>
-              <stop offset="100%" stop-color="#123B68"/>
-            </linearGradient>
-          </defs>
-          <circle cx="50" cy="50" r="48" fill="url(#atgGradient)"/>
-          <circle cx="50" cy="50" r="34" fill="none" stroke="#FFFFFF" stroke-width="2.1" opacity=".9"/>
-          <ellipse cx="50" cy="50" rx="16" ry="34" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".8"/>
-          <path d="M18 50 H82" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".8"/>
-          <path d="M23 35 C38 42 62 42 77 35" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".75"/>
-          <path d="M23 65 C38 58 62 58 77 65" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".75"/>
-          <rect x="21" y="39" width="58" height="23" rx="4" fill="url(#atgGradient)" stroke="#FFFFFF" stroke-width="1.6"/>
-          <text x="50" y="55.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing="-1.2" fill="#FFFFFF">ATG</text>
-        </svg>
-        <span class="logo-wordmark">ABATO TRANSGLOBAL</span>
-      </a>
+<header>
+
+  <div class="container nav">
+
+    <a href="/" class="logo" aria-label="Abato Transglobal Home">
+
+      <!--
+        ABATO TRANSGLOBAL ATG LOGO
+        Circular ATG icon + wordmark.
+        Keep this SVG unchanged across all pages.
+      -->
+
+      <svg class="logo-icon"
+           viewBox="0 0 120 120"
+           xmlns="http://www.w3.org/2000/svg"
+           aria-label="Abato Transglobal ATG logo">
+
+        <defs>
+
+          <linearGradient id="atgGradientAbout"
+                          x1="15%"
+                          y1="10%"
+                          x2="90%"
+                          y2="95%">
+
+            <stop offset="0%"
+                  stop-color="#19c3b1"/>
+
+            <stop offset="100%"
+                  stop-color="#123b68"/>
+
+          </linearGradient>
+
+        </defs>
+
+        <!-- Circular brand mark -->
+        <circle cx="60"
+                cy="60"
+                r="56"
+                fill="url(#atgGradientAbout)"/>
+
+        <!-- Outer globe/orbit line -->
+        <ellipse cx="60"
+                 cy="60"
+                 rx="42"
+                 ry="49"
+                 fill="none"
+                 stroke="white"
+                 stroke-width="3.2"
+                 opacity="0.92"/>
+
+        <!-- Horizontal globe curve -->
+        <path d="M18 60
+                 C30 43, 45 36, 60 36
+                 C75 36, 90 43, 102 60
+                 C90 77, 75 84, 60 84
+                 C45 84, 30 77, 18 60Z"
+              fill="none"
+              stroke="white"
+              stroke-width="3"
+              opacity="0.9"/>
+
+        <!-- ATG monogram -->
+        <text x="60"
+              y="70"
+              text-anchor="middle"
+              font-family="Arial, Helvetica, sans-serif"
+              font-size="37"
+              font-weight="800"
+              letter-spacing="-5"
+              fill="white">
+          ATG
+        </text>
+
+        <!-- Dynamic orbit -->
+        <path d="M25 78
+                 C40 91, 76 92, 96 48"
+              fill="none"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+              opacity="0.85"/>
+
+      </svg>
+
+      <span class="logo-text">
+        ABATO TRANSGLOBAL
+      </span>
+
+    </a>
+
     <button class="mobile-menu"
             aria-label="Open navigation"
             onclick="toggleMenu()">
@@ -2014,46 +2085,98 @@
 
 </main>
 
- <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
 
-      <div class="footer-grid">
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
-        <div class="footer-brand">
-          <a href="/" class="site-logo" aria-label="Abato Transglobal home">
-            <!-- Same ATG logo, reused without changing its artwork. -->
-            <svg class="logo-symbol" viewBox="0 0 100 100" role="img" aria-label="ATG globe logo" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="atgGradientFooter" x1="8%" y1="5%" x2="92%" y2="95%">
-                  <stop offset="0%" stop-color="#19C3B1"/>
-                  <stop offset="100%" stop-color="#123B68"/>
-                </linearGradient>
-              </defs>
-              <circle cx="50" cy="50" r="48" fill="url(#atgGradientFooter)"/>
-              <circle cx="50" cy="50" r="34" fill="none" stroke="#FFFFFF" stroke-width="2.1" opacity=".9"/>
-              <ellipse cx="50" cy="50" rx="16" ry="34" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".8"/>
-              <path d="M18 50 H82" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity=".8"/>
-              <path d="M23 35 C38 42 62 42 77 35" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".75"/>
-              <path d="M23 65 C38 58 62 58 77 65" fill="none" stroke="#FFFFFF" stroke-width="1.4" opacity=".75"/>
-              <rect x="21" y="39" width="58" height="23" rx="4" fill="url(#atgGradientFooter)" stroke="#FFFFFF" stroke-width="1.6"/>
-              <text x="50" y="55.7" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing="-1.2" fill="#FFFFFF">ATG</text>
-            </svg>
-            <span class="logo-wordmark">ABATO TRANSGLOBAL</span>
-          </a>
+<footer>
 
-          <p>
-            Professional multilingual language services supporting businesses,
-            organizations and digital products across languages and markets.
-          </p>
+  <div class="container">
 
-          <div class="social-links">
-            <a href="#" aria-label="LinkedIn" title="Add your LinkedIn profile URL"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" aria-label="X" title="Add your X profile URL"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" aria-label="Facebook" title="Add your Facebook page URL"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram" title="Add your Instagram profile URL"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </div>
+    <div class="footer-grid">
+
+
+      <!-- BRAND -->
+
+      <div class="footer-brand">
+
+        <a href="/" class="logo">
+
+          <!-- SAME ATG LOGO -->
+          <svg class="logo-icon"
+               viewBox="0 0 120 120"
+               xmlns="http://www.w3.org/2000/svg"
+               aria-label="Abato Transglobal ATG logo">
+
+            <defs>
+
+              <linearGradient id="atgGradientFooter"
+                              x1="15%"
+                              y1="10%"
+                              x2="90%"
+                              y2="95%">
+
+                <stop offset="0%"
+                      stop-color="#19c3b1"/>
+
+                <stop offset="100%"
+                      stop-color="#123b68"/>
+
+              </linearGradient>
+
+            </defs>
+
+            <circle cx="60"
+                    cy="60"
+                    r="56"
+                    fill="url(#atgGradientFooter)"/>
+
+            <ellipse cx="60"
+                     cy="60"
+                     rx="42"
+                     ry="49"
+                     fill="none"
+                     stroke="white"
+                     stroke-width="3.2"
+                     opacity="0.92"/>
+
+            <path d="M18 60
+                     C30 43, 45 36, 60 36
+                     C75 36, 90 43, 102 60
+                     C90 77, 75 84, 60 84
+                     C45 84, 30 77, 18 60Z"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="3"
+                  opacity="0.9"/>
+
+            <text x="60"
+                  y="70"
+                  text-anchor="middle"
+                  font-family="Arial, Helvetica, sans-serif"
+                  font-size="37"
+                  font-weight="800"
+                  letter-spacing="-5"
+                  fill="white">
+              ATG
+            </text>
+
+            <path d="M25 78
+                     C40 91, 76 92, 96 48"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  opacity="0.85"/>
+
+          </svg>
+
+          <span class="logo-text">
+            ABATO TRANSGLOBAL
+          </span>
+
+        </a>
 
 
         <p class="footer-description">
