@@ -2,19 +2,27 @@ name: Generate Sitemap
 
 on:
   push:
-    branches: [ main, master ] # This wakes up the robot whenever you update your site
+    branches: [ main, master ]
+
+# This forces GitHub to give this specific script absolute read/write powers
+permissions:
+  contents: write
 
 jobs:
   sitemap:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0 # Required by this tool to accurately read file histories
 
     - name: Generate Sitemap
       uses: cicirello/generate-sitemap@v1
       with:
         base-url-path: https://abatotransglobal.com
+        # This scans for HTML, PDFs, Markdown, Text, and config documents
+        additional-extensions: pdf md markdown txt yml yaml js css
 
     - name: Commit and Push Sitemap File
       run: |
