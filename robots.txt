@@ -19,7 +19,7 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Meta (Meta AI, Llama models)
+# Meta (Meta AI)
 User-agent: MetaExternalAgent
 Allow: /
 
@@ -29,38 +29,16 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Amazon (Titan, Amazon Bedrock crawlers)
+# Amazon
 User-agent: Amazonbot
 Allow: /
 
-# Cohere (Enterprise AI)
-User-agent: cohere-ai
-Allow: /
-
-# Common Crawl (Massive open dataset used by almost all open-source AI models)
+# Common Crawl (Massive open dataset used by open-source AI models)
 User-agent: CCBot
 Allow: /
 
-# Omgili / Webz.io (Big data provider that sells web feeds directly to AI companies)
-User-agent: omgilibot
-Allow: /
-
-# Microsoft / Bing (Powers Copilot and Yahoo)
+# Microsoft / Bing (Powers Copilot)
 User-agent: Bingbot
-Allow: /
-User-agent: Adidxbot
-Allow: /
-
-# Brave Search (Powers privacy-focused AI models)
-User-agent: BraveBot
-Allow: /
-
-# Mojeek (Independent AI crawler index)
-User-agent: MojeekBot
-Allow: /
-
-# You.com (AI Search Engine)
-User-agent: YouBot
 Allow: /
 
 Sitemap: https://abatotransglobal.com
