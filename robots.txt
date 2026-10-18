@@ -1,0 +1,66 @@
+User-agent: *
+Allow: /
+
+# OpenAI (ChatGPT, SearchGPT)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Google (Gemini, Google AI Search)
+User-agent: Google-Extended
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Meta (Meta AI, Llama models)
+User-agent: MetaExternalAgent
+Allow: /
+
+# Apple (Apple Intelligence)
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon (Titan, Amazon Bedrock crawlers)
+User-agent: Amazonbot
+Allow: /
+
+# Cohere (Enterprise AI)
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl (Massive open dataset used by almost all open-source AI models)
+User-agent: CCBot
+Allow: /
+
+# Omgili / Webz.io (Big data provider that sells web feeds directly to AI companies)
+User-agent: omgilibot
+Allow: /
+
+# Microsoft / Bing (Powers Copilot and Yahoo)
+User-agent: Bingbot
+Allow: /
+User-agent: Adidxbot
+Allow: /
+
+# Brave Search (Powers privacy-focused AI models)
+User-agent: BraveBot
+Allow: /
+
+# Mojeek (Independent AI crawler index)
+User-agent: MojeekBot
+Allow: /
+
+# You.com (AI Search Engine)
+User-agent: YouBot
+Allow: /
+
+Sitemap: https://abatotransglobal.com
